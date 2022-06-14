@@ -17,7 +17,9 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-app.post("/paynow", [parseUrl, parseJson], (req, res) => {
+app.post("../../paynow", [parseUrl, parseJson], (req, res) => {
+	
+	 console.log("coming from pay now clickkkkkkkkkkkkkkk");
   // Route for making payment
 
   var paymentDetails = {
