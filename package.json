@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/amyhua/basic-website-template-node#readme",
   "dependencies": {
+    "canvas": "^2.11.2",
     "express": "^4.14.0",
     "http": "0.0.0",
     "nodemon": "^1.11.0"

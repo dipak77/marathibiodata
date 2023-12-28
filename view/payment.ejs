@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Payment</title>
+</head>
+<body>
+    <h1>Paytm Payment</h1>
+    <form method="post" action="https://securegw-stage.paytm.in/theia/processTransaction" name="paytm_form">
+        <% Object.keys(params).forEach(function(key) { %>
+            <input type="hidden" name="<%= key %>" value="<%= params[key] %>">
+        <% }); %>
+        <input type="submit" value="Proceed to Paytm">
+    </form>
+</body>
+</html>
