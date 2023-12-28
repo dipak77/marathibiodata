@@ -10,14 +10,20 @@ const app = express();
 
 const parseUrl = express.urlencoded({ extended: false });
 const parseJson = express.json({ extended: false });
+const bodyParser = require('body-parser');
+const { createCanvas } = require('canvas');
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
+var http = require('http');
+var path = require('path');
 
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
-});
+//var router = express();
+//var server = http.createServer(router);
 
-app.post("../../paynow", [parseUrl, parseJson], (req, res) => {
+//router.use(express.static(path.resolve(__dirname, 'client')))
+app.use(express.static(__dirname + '/client'));
+//app.use('/', require('./routes/server'));
+app.post("../paynow", [parseUrl, parseJson], (req, res) => {
 	
 	 console.log("coming from pay now clickkkkkkkkkkkkkkk");
   // Route for making payment
@@ -131,6 +137,37 @@ app.post("/callback", (req, res) => {
      });
 });
 
+app.post('/downloadCanvas', (req, res) => {
+    console.log("POST triggered!");
+    const canvasDataURL = req.body.canvasDataURL;
+	console.log(canvasDataURL);
+    // Perform server-side logic with the received canvas URL
+    const imageBuffer = generateImageFromCanvasURL(canvasDataURL);
+
+    // Set up headers for file download
+    res.setHeader('Content-disposition', 'attachment; filename=DownloadedCanvas.png');
+    res.setHeader('Content-type', 'image/png');
+
+    // Send the image buffer back to the client
+    res.send(imageBuffer);
+});
+
+// Simulate server-side canvas processing
+function generateImageFromCanvasURL(canvasDataURL) {
+    const canvas = createCanvas(400, 200);
+    const context = canvas.getContext('2d');
+
+    // Load the image from the canvasDataURL
+    const image = new Image();
+    image.src = canvasDataURL;
+
+    // Draw the image onto the canvas
+    context.drawImage(image, 0, 0);
+
+    // Convert the canvas to a buffer
+    const imageBuffer = canvas.toBuffer('image/png');
+    return imageBuffer;
+}
 app.listen(PORT, () => {
   console.log(`App is listening on Port ${PORT}`);
 });
