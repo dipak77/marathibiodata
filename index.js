@@ -3,14 +3,14 @@ const app = express();
 const server = require("http").createServer(app);
 const path = require("path");
 const bodyparser = require("body-parser");
-var PaytmChecksum = require("./PaytmChecksum/PaytmChecksum");
+const PaytmChecksum = require("./PaytmChecksum/PaytmChecksum");
 const checksum_lib = require('./Paytm/checksum')
 const config = require('./Paytm/config');
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static(__dirname + '/client/index'));
+app.use(express.static(__dirname + '/client'));
 
 app.post("/callback", (req, res) => {
     // Route for verifiying payment
@@ -28,13 +28,13 @@ app.post("/callback", (req, res) => {
         // verify the checksum
         var checksumhash = post_data.CHECKSUMHASH;
         // delete post_data.CHECKSUMHASH;
-        var result = checksum_lib.verifychecksum(post_data, config.PaytmConfig.key, checksumhash);
+        var result = PaytmChecksum.verifychecksum(post_data, config.PaytmConfig.key, checksumhash);
 
 
         // Send Server-to-Server request to verify Order Status
         var params = { "MID": config.PaytmConfig.mid, "ORDERID": post_data.ORDERID };
 
-        checksum_lib.genchecksum(params, config.PaytmConfig.key, function (err, checksum) {
+        PaytmChecksum.generateSignature(params, config.PaytmConfig.key, function (err, checksum) {
 
             params.CHECKSUMHASH = checksum;
             post_data = 'JsonData=' + JSON.stringify(params);
@@ -78,10 +78,11 @@ app.post("/callback", (req, res) => {
 app.post('/paynow', (req, res) => {
     var paymentDetails = {
         amount: req.body.amount,
-        customerId: req.body.id,
+        customerId: 'cust_001' + new Date().getTime(),
         customerEmail: req.body.email,
         customerPhone: req.body.phone
     }
+    
     if (!paymentDetails.amount || !paymentDetails.customerId || !paymentDetails.customerEmail || !paymentDetails.customerPhone) {
         res.status(400).send('Payment failed')
     } else {
@@ -98,7 +99,7 @@ app.post('/paynow', (req, res) => {
         params['MOBILE_NO'] = paymentDetails.customerPhone;
 
 
-        checksum_lib.genchecksum(params, config.PaytmConfig.key, function (err, checksum) {
+        PaytmChecksum.generateSignature(params, config.PaytmConfig.key, function (err, checksum) {
             var txn_url = "https://securegw-stage.paytm.in/theia/processTransaction"; // for staging
              //var txn_url = "https://securegw.paytm.in/theia/processTransaction"; // for production
 
