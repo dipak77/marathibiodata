@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>बायोडाटा स्टुडिओ — ShubhBiodata Builder</title>
+  <meta name="description" content="लाइव्ह प्रीव्ह्यूसह प्रीमियम मराठी मॅरेज बायोडाटा बनवा — HD PNG/JPG/PDF डाउनलोड करा." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233d0d20'/%3E%3Cpath d='M32 10c8 7 14 12 14 20 0 9-6 16-14 16s-14-7-14-16c0-8 6-13 14-20z' fill='%23e9bb63'/%3E%3Ccircle cx='32' cy='30' r='6' fill='%233d0d20'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Tiro+Devanagari+Marathi:ital@0;1&family=Mukta:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/premium.css" />
+</head>
+<body class="builder-body" id="builderRoot">
+
+  <!-- ══════════ Top bar ══════════ -->
+  <header class="builder-top">
+    <div class="builder-top-inner">
+      <a href="index.html" class="brand" style="gap:9px;">
+        <span class="brand-mark" style="width:38px;height:38px;border-radius:11px;">
+          <svg viewBox="0 0 64 64" fill="none" style="width:24px;height:24px;"><path d="M32 6c10 8.5 17.5 15 17.5 25.5C49.5 43 41.5 52 32 52S14.5 43 14.5 31.5C14.5 21 22 14.5 32 6z" fill="#3d0d20"/><path d="M32 14c7 6 12 10.5 12 18 0 8-5.5 14-12 14s-12-6-12-14c0-7.5 5-12 12-18z" fill="#e9bb63"/><circle cx="32" cy="31" r="5.5" fill="#3d0d20"/></svg>
+        </span>
+        <span id="brandStepBack" style="color:#e9d5b8;font-weight:700;font-size:14px;">← मुख्यपृष्ठ</span>
+      </a>
+      <div class="stepper" id="stepper">
+        <button class="stepper-btn" data-step="1"><span class="s-num">1</span><span class="s-lbl">थीम</span></button>
+        <button class="stepper-btn" data-step="2"><span class="s-num">2</span><span class="s-lbl">वैयक्तिक</span></button>
+        <button class="stepper-btn" data-step="3"><span class="s-num">3</span><span class="s-lbl">कौटुंबिक</span></button>
+        <button class="stepper-btn" data-step="4"><span class="s-num">4</span><span class="s-lbl">फोटो व संपर्क</span></button>
+        <button class="stepper-btn" data-step="5"><span class="s-num">5</span><span class="s-lbl">डाउनलोड</span></button>
+      </div>
+      <span class="save-chip" id="saveChip"><span class="dot"></span><span id="saveChipTxt">सेव्ह झाले</span></span>
+      <div class="lang-toggle">
+        <button data-lang="mr" class="active">मराठी</button>
+        <button data-lang="hi">हिंदी</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button class="btn btn-ghost-dark btn-sm" id="btnReset">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 109-9 9.8 9.8 0 00-6.7 2.7L3 8"/><path d="M3 3v5h5"/></svg>
+        <span data-bui="resetDraft">नवीन बायोडाटा</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile form/preview tabs -->
+  <div class="container-x mobile-pv-toggle" style="padding-top:14px;">
+      <div style="display:flex;background:#fff;border-radius:999px;padding:5px;border:1.5px solid #e6d5b5;box-shadow:var(--shadow-sm);">
+        <button class="pv-tab active" data-view="form">📝 फॉर्म</button>
+        <button class="pv-tab" data-view="preview">👁 प्रीव्ह्यू</button>
+      </div>
+  </div>
+
+  <main class="builder-main">
+    <!-- ══════════ FORM PANEL ══════════ -->
+    <div class="panel-card" id="panelCard">
+
+      <!-- STEP 1 · THEME -->
+      <section class="step-panel active" data-step="1">
+        <div class="panel-head"><h2 id="s1Title">थीम निवडा</h2><p id="s1Sub">तुमच्या आवडीची डिझाइन — नंतरही बदलता येते.</p></div>
+        <div class="panel-body">
+          <div class="tmpl-picker" id="themeGrid"></div>
+          <div class="f-divider" style="margin-top:24px;"><span data-bui="ink">मजकूर रंग</span></div>
+          <div class="ink-row">
+            <button class="ink-dot sel" data-ink="classic" title="क्लासिक काळा" style="background:#251a16;"></button>
+            <button class="ink-dot" data-ink="maroon" title="रॉयल मेरून" style="background:#701a38;"></button>
+            <button class="ink-dot" data-ink="green" title="वन हिरवा" style="background:#175240;"></button>
+          </div>
+          <div class="f-divider" style="margin-top:24px;"><span>HEADER</span></div>
+          <div class="f-grid">
+            <div class="f-field full"><label data-bui="invocation">शीर्षक मंगलश्लोक</label><input type="text" id="fInvocation" maxlength="48" /></div>
+            <div class="f-field full"><label data-bui="titleLbl">दस्तऐवज शीर्षक</label><input type="text" id="fDocTitle" maxlength="30" /></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 2 · PERSONAL -->
+      <section class="step-panel" data-step="2">
+        <div class="panel-head"><h2 id="s2Title">वैयक्तिक माहिती</h2><p id="s2Sub">नाव, जन्म, उंची, शिक्षण, नोकरी…</p></div>
+        <div class="panel-body">
+          <div class="f-divider"><span data-bui="secPersonal">वैयक्तिक व ज्योतिष</span></div>
+          <div class="f-grid">
+            <div class="f-field full"><label data-bui="fullName">संपूर्ण नाव *</label><input type="text" id="fName" maxlength="40" placeholder="उदा. अश्विनी संतोष इंगळे" /></div>
+            <div class="f-field"><label data-bui="caste">जात / उपजात</label><input type="text" id="fCaste" maxlength="30" placeholder="उदा. हिंदू मराठा" /></div>
+            <div class="f-field"><label data-bui="dob">जन्मतारीख</label><input type="date" id="fDob" /></div>
+            <div class="f-field"><label data-bui="birthTime">जन्मवेळ</label><input type="text" id="fBirthTime" maxlength="24" placeholder="उदा. सकाळी ७:३०" /></div>
+            <div class="f-field"><label data-bui="birthPlace">जन्मठिकाण</label><input type="text" id="fBirthPlace" maxlength="30" placeholder="उदा. पुणे" /></div>
+            <div class="f-field"><label data-bui="height">उंची</label><select id="fHeight"></select></div>
+            <div class="f-field"><label data-bui="weight">वजन</label><input type="number" id="fWeight" min="25" max="200" placeholder="उदा. 58" /></div>
+            <div class="f-field"><label data-bui="complexion">रंग</label><select id="fComplexion"></select></div>
+            <div class="f-field"><label data-bui="blood">रक्तगट</label><select id="fBlood"></select></div>
+            <div class="f-field"><label data-bui="rashi">रास</label><select id="fRashi"></select></div>
+            <div class="f-field"><label data-bui="nadi">नाडी</label><select id="fNadi"></select></div>
+            <div class="f-field"><label data-bui="gan">गण</label><select id="fGan"></select></div>
+            <div class="f-field"><label data-bui="mangal">मंगळ</label><select id="fMangal"></select></div>
+            <div class="f-field"><label data-bui="devak">देवक</label><input type="text" id="fDevak" maxlength="30" placeholder="उदा. तुळजा भवानी" /></div>
+            <div class="f-field"><label data-bui="gotra">गोत्र</label><input type="text" id="fGotra" maxlength="30" placeholder="उदा. कौशिक" /></div>
+          </div>
+          <div class="f-divider" style="margin-top:20px;"><span data-bui="secEdu">शिक्षण व करिअर</span></div>
+          <div class="f-grid">
+            <div class="f-field full"><label data-bui="edu">शिक्षण</label><input type="text" id="fEdu" maxlength="46" placeholder="उदा. B.E. कॉम्प्युटर" /></div>
+            <div class="f-field full"><label data-bui="occ">नोकरी / व्यवसाय</label><input type="text" id="fOcc" maxlength="46" placeholder="उदा. सॉफ्टवेअर इंजिनिअर, TCS पुणे" /></div>
+            <div class="f-field full"><label data-bui="income">वार्षिक उत्पन्न</label><input type="text" id="fIncome" maxlength="30" placeholder="उदा. ₹८,५०,०००" /></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 3 · FAMILY -->
+      <section class="step-panel" data-step="3">
+        <div class="panel-head"><h2 id="s3Title">कौटुंबिक माहिती</h2><p id="s3Sub">वडील, आई, भावंडे, नातेसंबंध…</p></div>
+        <div class="panel-body">
+          <div class="f-grid">
+            <div class="f-field"><label data-bui="father">वडिलांचे नाव</label><input type="text" id="fFather" maxlength="40" placeholder="उदा. संतोष काळिदास इंगळे" /></div>
+            <div class="f-field"><label data-bui="fatherOcc">वडिलांचा व्यवसाय</label><input type="text" id="fFatherOcc" maxlength="36" placeholder="उदा. शासकीय नोकरी" /></div>
+            <div class="f-field"><label data-bui="mother">आईचे नाव</label><input type="text" id="fMother" maxlength="40" placeholder="उदा. रेखा इंगळे" /></div>
+            <div class="f-field"><label data-bui="motherOcc">आईचा व्यवसाय</label><input type="text" id="fMotherOcc" maxlength="36" placeholder="उदा. गृहिणी" /></div>
+          </div>
+          <div class="f-divider" style="margin-top:20px;"><span data-bui="secSiblings">भावंडे</span></div>
+          <div class="f-grid">
+            <div class="f-field">
+              <label data-bui="brothers">भाऊ</label>
+              <div class="stepper-mini">
+                <button type="button" data-count="brothers" data-dir="-">−</button>
+                <span class="val" id="cv-brothers">०</span>
+                <button type="button" data-count="brothers" data-dir="+">＋</button>
+              </div>
+            </div>
+            <div class="f-field">
+              <label data-bui="sisters">बहिणी</label>
+              <div class="stepper-mini">
+                <button type="button" data-count="sisters" data-dir="-">−</button>
+                <span class="val" id="cv-sisters">०</span>
+                <button type="button" data-count="sisters" data-dir="+">＋</button>
+              </div>
+            </div>
+            <div class="f-field full" id="row-brothersMarried" style="display:none;">
+              <div class="sub-counter" style="display:flex;justify-content:space-between;">
+                <span><span data-bui="brothers">भाऊ</span> · <span data-bui="marriedSuffix">विवाहित</span></span>
+                <span class="stepper-mini" style="max-width:170px;">
+                  <button type="button" data-count="brothersMarried" data-dir="-">−</button>
+                  <span class="val" id="cv-brothersMarried">०</span>
+                  <button type="button" data-count="brothersMarried" data-dir="+">＋</button>
+                </span>
+              </div>
+            </div>
+            <div class="f-field full" id="row-sistersMarried" style="display:none;">
+              <div class="sub-counter" style="display:flex;justify-content:space-between;">
+                <span><span data-bui="sisters">बहिणी</span> · <span data-bui="marriedSuffix">विवाहित</span></span>
+                <span class="stepper-mini" style="max-width:170px;">
+                  <button type="button" data-count="sistersMarried" data-dir="-">−</button>
+                  <span class="val" id="cv-sistersMarried">०</span>
+                  <button type="button" data-count="sistersMarried" data-dir="+">＋</button>
+                </span>
+              </div>
+            </div>
+            <div class="f-field full"><label data-bui="mama">मामा</label><input type="text" id="fMama" maxlength="40" placeholder="उदा. शिवदास हजबन, जळगाव" /></div>
+            <div class="f-field full"><label data-bui="relatives">नातेसंबंध (उदा. वाडिले, भामरे…)</label><input type="text" id="fRelatives" maxlength="46" placeholder="उदा. हजबन, सोनवणे" /></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 4 · PHOTO & CONTACT -->
+      <section class="step-panel" data-step="4">
+        <div class="panel-head"><h2 id="s4Title">फोटो व संपर्क</h2><p id="s4Sub">फोटो, संपर्क क्रमांक, पत्ता व अपेक्षा.</p></div>
+        <div class="panel-body">
+          <input type="file" id="photoInput" accept="image/*" hidden />
+          <div class="photo-drop" id="photoDrop">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+            <p data-bui="photoHint">तस्वीर टॅप करा किंवा इथे ड्रॅग करा</p>
+            <small data-bui="photoSub">JPG/PNG · नंतर झूम/क्रॉप करता येते</small>
+          </div>
+          <div class="photo-chip" id="photoChip" style="display:none;">
+            <img id="photoChipImg" alt="photo" />
+            <div style="font-size:13px;font-weight:700;color:var(--wine-700);">✓ <span data-bui="toastPhoto">फोटो सेट झाला</span></div>
+            <div class="pc-btns">
+              <button class="icon-btn" id="photoChangeBtn" title="Change"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z"/></svg></button>
+              <button class="icon-btn danger" id="photoRemoveBtn" title="Remove"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a1 1 0 011-1h6a1 1 0 011 1v2m3 0v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6"/></svg></button>
+            </div>
+          </div>
+          <div class="f-grid" style="margin-top:22px;">
+            <div class="f-field"><label data-bui="phone">संपर्क क्रमांक *</label><input type="tel" id="fContact" maxlength="16" placeholder="उदा. ९८२२० १२३४५" /></div>
+            <div class="f-field"><label data-bui="address">राहण्याचा पत्ता</label><input type="text" id="fAddress" maxlength="60" placeholder="उदा. पिंपरी-चिंचवड, पुणे" /></div>
+            <div class="f-field full"><label data-bui="expect">अपेक्षा (वधू/वराबद्दल)</label><textarea id="fExpect" maxlength="150" placeholder="उदा. मनमिळाऊ, समजदार, शिक्षित कुटुंबातील…"></textarea></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 5 · DOWNLOAD -->
+      <section class="step-panel" data-step="5">
+        <div class="panel-head"><h2 id="s5Title">डाउनलोड करा</h2><p id="s5Sub">HD PNG, JPG किंवा PDF — एका क्लिकवर.</p></div>
+        <div class="panel-body">
+          <div class="builder-done-card">
+            <div class="done-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></div>
+            <h3 style="font-family:var(--font-display);font-size:26px;color:var(--wine-800);" data-bui="done1">बायोडाटा तयार आहे!</h3>
+            <p style="color:var(--ink-soft);font-size:14.5px;margin-top:8px;" data-bui="done2">उजवीकडील प्रीव्ह्यू तपासा — काही बदलायचा असल्यास मागील पायरीवर जा.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="panel-actions">
+        <button class="btn btn-outline" id="btnPrev">← मागे</button>
+        <button class="btn btn-gold" id="btnNext"><span class="shine"></span>पुढे →</button>
+      </div>
+    </div>
+
+    <!-- ══════════ PREVIEW PANEL ══════════ -->
+    <div class="preview-col" id="previewSide">
+      <div class="preview-card">
+        <div class="preview-toolbar">
+          <span class="pt-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15.5l-1.9-4.6L5.5 9l4.6-1.4z"/><path d="M19 3l.7 1.8L21.5 5.5l-1.8.7L19 8l-.7-1.8-1.8-.7 1.8-.7z"/></svg>
+            <span data-bui="livePreview">लाइव्ह प्रीव्ह्यू</span>
+          </span>
+          <span class="wm-chip" id="planChip"></span>
+          <button class="icon-btn" id="btnShare" title="Share" style="display:none;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button>
+        </div>
+        <div class="preview-stage">
+          <div class="canvas-shell"><canvas id="bioCanvas" width="1224" height="1584"></canvas></div>
+        </div>
+        <p class="preview-tip" id="wmNote" data-bui="wmNote">मोफत आवृत्तीत वॉटरमार्क येते। HD PNG/PDF व वॉटरमार्क-मुक्त डाउनलोडसाठी ₹49 प्रीमियम घ्या.</p>
+        <div class="dl-bar">
+          <button class="btn btn-wine" id="btnJpg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+            <span data-bui="dlJpg">JPG डाउनलोड</span>
+          </button>
+          <button class="btn btn-wine dl-pro" data-fmt="png">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+            <span data-bui="dlPng">HD PNG</span><span class="lock-tag dl-lock">PRO</span>
+          </button>
+          <button class="btn btn-wine dl-pro" data-fmt="pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/></svg>
+            <span data-bui="dlPdf">PDF डाउनलोड</span><span class="lock-tag dl-lock">PRO</span>
+          </button>
+          <button class="btn btn-gold" id="btnUnlock"><span class="shine"></span>✦ <span data-bui="proUnlock">प्रीमियम आनलॉक करा (₹49)</span></button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ══════════ Cropper modal ══════════ -->
+  <div class="modal-back" id="cropModal">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3 data-bui="cropTitle">फोटो फ्रेम समायोजित करा</h3>
+        <button class="modal-x" id="cropCancel" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="crop-stage" id="cropStage">
+          <img id="cropImg" alt="crop" />
+          <div class="crop-frame-line"></div>
+        </div>
+        <div class="crop-ctrl">
+          <span style="font-size:19px;">🔍</span>
+          <input type="range" id="cropZoom" min="1" max="3" step="0.01" value="1" />
+        </div>
+        <p class="f-hint" style="text-align:center;" data-bui="cropHint">फोटो ड्रॅग करा · स्लायडरने झूम करा</p>
+        <button class="btn btn-gold btn-block" id="cropApply" style="margin-top:14px;"><span data-bui="cropApply">✓ फ्रेम लागू करा</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ Premium modal ══════════ -->
+  <div class="modal-back" id="premiumModal">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3 data-bui="pmTitle">✨ प्रीमियम HD अनलॉक करा</h3>
+        <button class="modal-x" id="pmClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="premium-hero">
+          <div class="pm-price"><span class="strike">₹99</span> ₹49</div>
+          <div style="font-size:13px;opacity:.85;">एकदाच पेमेंट · कायमस्वरूपी या बायोडाट्यासाठी</div>
+          <ul class="pm-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-bui="pm1">वॉटरमार्क-मुक्त PNG / JPG / PDF</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-bui="pm2">सर्व २०+ प्रीमियम थीम्स</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-bui="pm3">सोनेरी फोटो-फ्रेम HD</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-bui="pm4">प्रायोरिटी WhatsApp सपोर्ट</span></li>
+          </ul>
+          <div class="pm-pay-row">
+            <button class="btn btn-gold btn-lg btn-block" id="pmPay"><span class="shine"></span><span data-bui="pmPay">₹49 — UPI ने पेमेंट करा</span></button>
+            <button class="btn btn-ghost-dark btn-block" id="pmDemo"><span data-bui="pmDemo">डेमो अनलॉक (चाचणी)</span></button>
+          </div>
+        </div>
+        <p class="pm-note" data-bui="pmNote">पेमेंटशी संबंधित मदतीसाठी WhatsApp 7709320496</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-zone" id="toastZone"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/builder.js"></script>
+</body>
+</html>
