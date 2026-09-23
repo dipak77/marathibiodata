@@ -18,13 +18,18 @@
 
   /* ---------- asset helpers ---------- */
   const themeCache = {};
+  function themeExt(id) {
+    const t = (window.TEMPLATES || []).find((x) => x.id === id);
+    return (t && t.ext) || 'png';
+  }
   function loadTheme(id) {
     return new Promise((resolve) => {
-      if (themeCache[id]) return resolve(themeCache[id]);
+      const key = String(id);
+      if (themeCache[key]) return resolve(themeCache[key]);
       const img = new Image();
-      img.onload = () => { themeCache[id] = img; resolve(img); };
+      img.onload = () => { themeCache[key] = img; resolve(img); };
       img.onerror = () => resolve(null);
-      img.src = 'theme/t-' + id + '.png';
+      img.src = 'theme/t-' + id + '.' + themeExt(id);
     });
   }
   function loadPhoto(dataUrl) {
@@ -86,32 +91,50 @@
   /* ---------- decorations ---------- */
   function drawOrnament(ctx, cx, y, color) {
     ctx.save();
-    ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = 1.6;
-    ctx.globalAlpha = .8;
+    ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = 1.8;
+    ctx.globalAlpha = .85;
     ctx.beginPath();
-    ctx.moveTo(cx, y - 7); ctx.lineTo(cx + 7, y); ctx.lineTo(cx, y + 7); ctx.lineTo(cx - 7, y);
+    ctx.moveTo(cx, y - 8); ctx.lineTo(cx + 8, y); ctx.lineTo(cx, y + 8); ctx.lineTo(cx - 8, y);
     ctx.closePath(); ctx.fill();
+    // side wings with end dots (reference title rule)
     [-1, 1].forEach((s) => {
-      ctx.beginPath(); ctx.moveTo(cx + s * 16, y); ctx.lineTo(cx + s * 84, y); ctx.stroke();
-      ctx.beginPath(); ctx.arc(cx + s * 94, y, 2.6, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath(); ctx.moveTo(cx + s * 18, y); ctx.lineTo(cx + s * 96, y); ctx.stroke();
+      ctx.beginPath(); ctx.arc(cx + s * 108, y, 3, 0, Math.PI * 2); ctx.fill();
+      // small flanking diamonds
+      ctx.beginPath();
+      const mx = cx + s * 128;
+      ctx.moveTo(mx, y - 5); ctx.lineTo(mx + 5, y); ctx.lineTo(mx, y + 5); ctx.lineTo(mx - 5, y);
+      ctx.closePath(); ctx.fill();
     });
     ctx.restore();
   }
   function sectionHeader(ctx, text, x, y, w, fonts, ink, s) {
     ctx.save();
+    // Wine bar accent + label (reference style)
     ctx.font = '700 ' + Math.round(27 * s) + 'px ' + fonts.head;
     ctx.fillStyle = ink.head;
     ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
-    ctx.fillText(text, x + 2, y);
-    const tw = ctx.measureText(text).width;
-    ctx.strokeStyle = ink.accent; ctx.lineWidth = 2.2 * s;
-    const lx = x + Math.min(w, tw + 130 * s);
-    ctx.beginPath(); ctx.moveTo(x, y + 12 * s); ctx.lineTo(lx, y + 12 * s); ctx.stroke();
+    // small square marker
     ctx.fillStyle = ink.accent;
+    ctx.fillRect(x, y - Math.round(22 * s), Math.round(5 * s), Math.round(24 * s));
+    ctx.fillStyle = ink.head;
+    ctx.fillText(text, x + Math.round(14 * s), y);
+    const tw = ctx.measureText(text).width;
+    ctx.strokeStyle = ink.accent; ctx.lineWidth = 2.4 * s;
+    const lx = x + Math.min(w, tw + 150 * s);
     ctx.beginPath();
-    const dx = lx + 10 * s, dy = y + 12 * s, dr = 7 * s;
+    ctx.moveTo(x + Math.round(14 * s), y + Math.round(13 * s));
+    ctx.lineTo(lx, y + Math.round(13 * s));
+    ctx.stroke();
+    ctx.fillStyle = ink.accent;
+    // end diamond + outer dot
+    const dx = lx + Math.round(11 * s), dy = y + Math.round(13 * s), dr = Math.round(7.5 * s);
+    ctx.beginPath();
     ctx.moveTo(dx, dy - dr); ctx.lineTo(dx + dr, dy); ctx.lineTo(dx, dy + dr); ctx.lineTo(dx - dr, dy);
     ctx.closePath(); ctx.fill();
+    ctx.beginPath();
+    ctx.arc(dx + dr + Math.round(10 * s), dy, Math.round(3 * s), 0, Math.PI * 2);
+    ctx.fill();
     ctx.restore();
     return y + Math.round(42 * s);
   }
@@ -153,27 +176,56 @@
     ctx.closePath();
   }
   function drawPhoto(ctx, img, x, y, fw, fh) {
+    // Outer drop + white mat + double gold rails + diamond accents (reference style)
     ctx.save();
-    ctx.shadowColor = 'rgba(60,20,30,.35)'; ctx.shadowBlur = 24; ctx.shadowOffsetY = 10;
-    roundedRect(ctx, x, y, fw, fh, 14);
+    ctx.shadowColor = 'rgba(60,20,30,.38)'; ctx.shadowBlur = 28; ctx.shadowOffsetY = 12;
+    roundedRect(ctx, x, y, fw, fh, 16);
     ctx.fillStyle = '#ffffff'; ctx.fill();
     ctx.shadowColor = 'transparent';
-    const pad = 12;
+    const pad = 14;
     const iw = fw - pad * 2, ih = fh - pad * 2;
     const scale = Math.max(iw / img.width, ih / img.height);
     const sw = img.width * scale, sh = img.height * scale;
-    roundedRect(ctx, x + pad, y + pad, iw, ih, 8);
+    roundedRect(ctx, x + pad, y + pad, iw, ih, 10);
     ctx.clip();
     ctx.drawImage(img, x + pad + (iw - sw) / 2, y + pad + (ih - sh) / 2, sw, sh);
+    // Soft vignette inside photo for pro studio look
+    const vg = ctx.createRadialGradient(x + fw / 2, y + fh / 2, Math.min(iw, ih) * 0.35, x + fw / 2, y + fh / 2, Math.max(iw, ih) * 0.72);
+    vg.addColorStop(0, 'rgba(0,0,0,0)');
+    vg.addColorStop(1, 'rgba(40,10,20,.22)');
+    ctx.fillStyle = vg;
+    ctx.fillRect(x + pad, y + pad, iw, ih);
     ctx.restore();
     ctx.save();
-    ctx.lineWidth = 4; ctx.strokeStyle = '#c79a3a';
-    roundedRect(ctx, x, y, fw, fh, 14); ctx.stroke();
-    ctx.lineWidth = 1.4; ctx.strokeStyle = 'rgba(199,154,58,.75)';
-    roundedRect(ctx, x + 7, y + 7, fw - 14, fh - 14, 9); ctx.stroke();
-    ctx.fillStyle = '#c79a3a';
-    [[x + fw / 2, y - 6], [x + fw / 2, y + fh + 6]].forEach(([cx, cy]) => {
-      ctx.beginPath(); ctx.moveTo(cx, cy - 8); ctx.lineTo(cx + 8, cy); ctx.lineTo(cx, cy + 8); ctx.lineTo(cx - 8, cy); ctx.closePath(); ctx.fill();
+    // Outer thick gold
+    ctx.lineWidth = 5; ctx.strokeStyle = '#c79a3a';
+    roundedRect(ctx, x, y, fw, fh, 16); ctx.stroke();
+    // Inner thin gold
+    ctx.lineWidth = 1.6; ctx.strokeStyle = 'rgba(236,207,130,.95)';
+    roundedRect(ctx, x + 8, y + 8, fw - 16, fh - 16, 10); ctx.stroke();
+    // Mid hairline
+    ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(138,106,31,.45)';
+    roundedRect(ctx, x + 12, y + 12, fw - 24, fh - 24, 8); ctx.stroke();
+    // Corner + edge diamonds (reference)
+    const diamond = (cx, cy, r, fill) => {
+      ctx.fillStyle = fill || '#c79a3a';
+      ctx.beginPath();
+      ctx.moveTo(cx, cy - r); ctx.lineTo(cx + r, cy); ctx.lineTo(cx, cy + r); ctx.lineTo(cx - r, cy);
+      ctx.closePath(); ctx.fill();
+    };
+    const gold = '#c79a3a', gold2 = '#eccf82';
+    diamond(x + fw / 2, y - 2, 9, gold);
+    diamond(x + fw / 2, y + fh + 2, 9, gold);
+    diamond(x - 2, y + fh / 2, 7, gold);
+    diamond(x + fw + 2, y + fh / 2, 7, gold);
+    diamond(x, y, 6, gold2);
+    diamond(x + fw, y, 6, gold2);
+    diamond(x, y + fh, 6, gold2);
+    diamond(x + fw, y + fh, 6, gold2);
+    // Small accent dots on edge diamonds
+    [[x + fw / 2, y - 14], [x + fw / 2, y + fh + 14]].forEach(([cx, cy]) => {
+      ctx.fillStyle = gold;
+      ctx.beginPath(); ctx.arc(cx, cy, 3.2, 0, Math.PI * 2); ctx.fill();
     });
     ctx.restore();
   }
@@ -338,15 +390,21 @@
       if (splitIdx <= 0) splitIdx = Math.ceil(items.length / 2);
       const left = items.slice(0, splitIdx), right = items.slice(splitIdx);
       sTier = 0.9;
-      for (const s of [0.9, 0.84, 0.78, 0.72, 0.66, 0.60]) {
+      for (const s of [0.9, 0.84, 0.78, 0.72, 0.66, 0.60, 0.55]) {
         const leftH = totalFor(left, s, colW);
         const rightH = totalFor(right, s, colW);
         const rightStart = photo ? photoBottom + 30 : y0;
         if (leftH <= (maxY - y0) && rightH <= (maxY - rightStart)) { sTier = s; break; }
         sTier = s;
       }
+      // Draw with best-effort tier; clip anything past maxY so nothing bleeds off-page
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(0, 0, W, maxY + 24);
+      ctx.clip();
       drawColumn(left, MARGIN, y0, colW, sTier, false);
       drawColumn(right, MARGIN + colW + gutter, photo ? photoBottom + 30 : y0, colW, sTier, false);
+      ctx.restore();
     } else {
       drawColumn(items, MARGIN, y0, contentW, sTier, true);
     }

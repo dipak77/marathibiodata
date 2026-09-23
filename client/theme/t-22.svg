@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="g22" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#f3d28e"/>
+<stop offset="0.5" stop-color="#c79a3a"/>
+<stop offset="1" stop-color="#f3d28e"/>
+</linearGradient>
+<g id="pet22">
+<path d="M0 -34 C7 -24 7 -12 0 -4 C-7 -12 -7 -24 0 -34Z" fill="url(#g22)" stroke="#5f1533" stroke-width="1"/>
+</g>
+<g id="med22">
+<circle r="42" fill="none" stroke="url(#g22)" stroke-width="4"/>
+<circle r="33" fill="none" stroke="#5f1533" stroke-width="1.6"/>
+<circle r="24" fill="none" stroke="#c79a3a" stroke-width="2"/>
+<use href="#pet22"/>
+<use href="#pet22" transform="rotate(45)"/>
+<use href="#pet22" transform="rotate(90)"/>
+<use href="#pet22" transform="rotate(135)"/>
+<use href="#pet22" transform="rotate(180)"/>
+<use href="#pet22" transform="rotate(225)"/>
+<use href="#pet22" transform="rotate(270)"/>
+<use href="#pet22" transform="rotate(315)"/>
+<circle r="13" fill="#5f1533"/>
+<circle r="7" fill="url(#g22)"/>
+<circle r="48" fill="none" stroke="#c79a3a" stroke-width="1" stroke-dasharray="4 6"/>
+</g>
+<g id="diam22">
+<path d="M0 -6 L6 0 L0 6 L-6 0Z" fill="url(#g22)" stroke="#5f1533" stroke-width="1"/>
+</g>
+<g id="swirl22">
+<path d="M0 0 C16 0 26 -10 26 -24 C26 -34 18 -40 11 -38 C4 -36 2 -28 8 -24 C13 -21 20 -24 20 -30" fill="none" stroke="url(#g22)" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M0 0 C0 16 -10 26 -24 26 C-34 26 -40 18 -38 11 C-36 4 -28 2 -24 8 C-21 13 -24 20 -30 20" fill="none" stroke="#5f1533" stroke-width="1.6" stroke-linecap="round"/>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="#fffdf7"/>
+<rect x="10" y="10" width="1204" height="1564" fill="none" stroke="url(#g22)" stroke-width="5"/>
+<rect x="28" y="28" width="1168" height="1528" fill="none" stroke="#5f1533" stroke-width="2"/>
+<rect x="52" y="52" width="1120" height="1480" fill="none" stroke="url(#g22)" stroke-width="2.5"/>
+<rect x="80" y="80" width="1064" height="1424" fill="none" stroke="#c79a3a" stroke-width="1.4"/>
+<rect x="88" y="88" width="1048" height="1408" fill="none" stroke="#5f1533" stroke-width="1" opacity="0.5"/>
+<g stroke="#c79a3a" stroke-width="3" fill="none" opacity="0.9">
+<path d="M140 40 C220 64 300 24 380 44 C440 58 500 40 540 46"/>
+<path d="M1084 40 C1004 64 924 24 844 44 C784 58 724 40 684 46"/>
+<path d="M140 1544 C220 1520 300 1560 380 1540 C440 1526 500 1544 540 1538"/>
+<path d="M1084 1544 C1004 1520 924 1560 844 1540 C784 1526 724 1544 684 1538"/>
+<path d="M40 140 C64 220 24 300 44 380 C58 440 40 500 46 540"/>
+<path d="M40 1444 C64 1364 24 1284 44 1204 C58 1144 40 1084 46 1044"/>
+<path d="M1184 140 C1160 220 1200 300 1180 380 C1166 440 1184 500 1178 540"/>
+<path d="M1184 1444 C1160 1364 1200 1284 1180 1204 C1166 1144 1184 1084 1178 1044"/>
+</g>
+<g>
+<use href="#med22" x="48" y="48"/>
+<use href="#med22" x="1176" y="48"/>
+<use href="#med22" x="48" y="1536"/>
+<use href="#med22" x="1176" y="1536"/>
+</g>
+<g>
+<use href="#swirl22" x="110" y="48"/>
+<use href="#swirl22" x="1114" y="48" transform="scale(-1,1) translate(-2228,0)"/>
+<use href="#swirl22" x="110" y="1536" transform="scale(1,-1) translate(0,-3072)"/>
+<use href="#swirl22" x="1114" y="1536" transform="scale(-1,-1) translate(-2228,-3072)"/>
+<use href="#swirl22" x="48" y="110" transform="rotate(90 48 110)"/>
+<use href="#swirl22" x="1176" y="110" transform="rotate(90 1176 110) scale(-1,1) translate(-2352,0)"/>
+<use href="#swirl22" x="48" y="1474" transform="rotate(-90 48 1474)"/>
+<use href="#swirl22" x="1176" y="1474" transform="rotate(-90 1176 1474) scale(-1,1) translate(-2352,0)"/>
+</g>
+<g fill="#5f1533">
+<path d="M612 24 L622 44 L612 64 L602 44Z"/>
+<path d="M612 1520 L622 1540 L612 1560 L602 1540Z"/>
+<path d="M24 792 L44 802 L64 792 L44 782Z"/>
+<path d="M1160 792 L1180 802 L1200 792 L1180 782Z"/>
+</g>
+<use href="#diam22" x="48" y="200"/>
+<use href="#diam22" x="48" y="320"/>
+<use href="#diam22" x="48" y="792"/>
+<use href="#diam22" x="48" y="1264"/>
+<use href="#diam22" x="48" y="1384"/>
+<use href="#diam22" x="1176" y="200"/>
+<use href="#diam22" x="1176" y="320"/>
+<use href="#diam22" x="1176" y="792"/>
+<use href="#diam22" x="1176" y="1264"/>
+<use href="#diam22" x="1176" y="1384"/>
+<use href="#diam22" x="220" y="48"/>
+<use href="#diam22" x="400" y="48"/>
+<use href="#diam22" x="824" y="48"/>
+<use href="#diam22" x="1004" y="48"/>
+<use href="#diam22" x="220" y="1536"/>
+<use href="#diam22" x="400" y="1536"/>
+<use href="#diam22" x="824" y="1536"/>
+<use href="#diam22" x="1004" y="1536"/>
+<g fill="none" stroke="url(#g22)" stroke-width="2">
+<path d="M48 480 C72 500 72 540 48 560"/>
+<path d="M48 1024 C72 1044 72 1084 48 1104"/>
+<path d="M1176 480 C1152 500 1152 540 1176 560"/>
+<path d="M1176 1024 C1152 1044 1152 1084 1176 1104"/>
+<path d="M480 48 C500 72 540 72 560 48"/>
+<path d="M664 48 C684 72 724 72 744 48"/>
+<path d="M480 1536 C500 1512 540 1512 560 1536"/>
+<path d="M664 1536 C684 1512 724 1512 744 1536"/>
+</g>
+<g fill="#c79a3a">
+<circle cx="48" cy="640" r="3.5"/><circle cx="48" cy="700" r="3.5"/>
+<circle cx="48" cy="884" r="3.5"/><circle cx="48" cy="944" r="3.5"/>
+<circle cx="1176" cy="640" r="3.5"/><circle cx="1176" cy="700" r="3.5"/>
+<circle cx="1176" cy="884" r="3.5"/><circle cx="1176" cy="944" r="3.5"/>
+<circle cx="300" cy="48" r="3.5"/><circle cx="612" cy="48" r="3.5"/><circle cx="924" cy="48" r="3.5"/>
+<circle cx="300" cy="1536" r="3.5"/><circle cx="612" cy="1536" r="3.5"/><circle cx="924" cy="1536" r="3.5"/>
+</g>
+</svg>

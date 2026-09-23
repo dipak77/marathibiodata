@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="gd71" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#f7e0a2"/>
+<stop offset="0.5" stop-color="#c9962f"/>
+<stop offset="1" stop-color="#f7e0a2"/>
+</linearGradient>
+<linearGradient id="tm71" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#f7cd2e"/>
+<stop offset="1" stop-color="#d99400"/>
+</linearGradient>
+<linearGradient id="tm71h" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#dda100"/>
+<stop offset="0.5" stop-color="#ffd94f"/>
+<stop offset="1" stop-color="#dda100"/>
+</linearGradient>
+<linearGradient id="bn71" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#5aa02f"/>
+<stop offset="1" stop-color="#245c14"/>
+</linearGradient>
+<linearGradient id="cn71" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#9a6a3a"/>
+<stop offset="0.5" stop-color="#6b4226"/>
+<stop offset="1" stop-color="#4a2c16"/>
+</linearGradient>
+<linearGradient id="bnY71" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#fbe064"/>
+<stop offset="1" stop-color="#e0b220"/>
+</linearGradient>
+<filter id="gr71" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+<feColorMatrix type="saturate" values="0"/>
+<feComponentTransfer><feFuncA type="table" tableValues="0 0.05"/></feComponentTransfer>
+</filter>
+<g id="lf71">
+<path d="M0 0 C8 -10 8 -27 0 -39 C-8 -27 -8 -10 0 0Z" fill="url(#bn71)"/>
+<path d="M0 -3 L0 -35" stroke="#1a4a0e" stroke-width="1.2"/>
+<path d="M0 -12 L5 -17 M0 -22 L5 -27" stroke="#1a4a0e" stroke-width="1"/>
+<path d="M0 -12 L-5 -17 M0 -22 L-5 -27" stroke="#1a4a0e" stroke-width="1"/>
+</g>
+<g id="coco71">
+<circle r="22" fill="url(#cn71)"/>
+<path d="M-13 -13 Q0 -4 13 -13 M-15 0 Q0 8 15 0 M-13 13 Q0 4 13 13" fill="none" stroke="#c9a06a" stroke-width="1.6" opacity="0.85"/>
+<path d="M0 -22 L4 -14 L-4 -14 Z" fill="url(#gd71)"/>
+<circle cy="-24" r="3" fill="#d99400"/>
+</g>
+<g id="bnch71">
+<path d="M-24 10 C-16 -10 12 -16 26 -4 C14 -8 -12 0 -18 12 Z" fill="url(#bnY71)" stroke="#b8860b" stroke-width="1.2"/>
+<path d="M-24 16 C-16 -4 12 -10 26 2 C14 -2 -12 6 -18 18 Z" fill="url(#bnY71)" stroke="#b8860b" stroke-width="1.2"/>
+<path d="M-24 22 C-16 2 12 -4 26 8 C14 4 -12 12 -18 24 Z" fill="url(#bnY71)" stroke="#b8860b" stroke-width="1.2"/>
+</g>
+<g id="ap71">
+<circle r="15" fill="#d24b33"/>
+<circle cx="-4.6" cy="-5.4" r="5" fill="#ef8a77" opacity="0.75"/>
+<path d="M0 -15 L0 -22" stroke="#5a3a1c" stroke-width="2.4" stroke-linecap="round"/>
+<use href="#lf71" transform="translate(2,-19) rotate(50) scale(0.5)"/>
+</g>
+<g id="co71">
+<circle r="30" fill="url(#cn71)"/>
+<path d="M-18 -18 Q0 -6 18 -18 M-21 0 Q0 11 21 0 M-18 18 Q0 6 18 18" fill="none" stroke="#c9a06a" stroke-width="2" opacity="0.85"/>
+<circle r="36" fill="none" stroke="url(#gd71)" stroke-width="4"/>
+<use href="#lf71" transform="translate(-16,-30) rotate(-46) scale(0.72)"/>
+<use href="#lf71" transform="translate(16,-30) rotate(46) scale(0.72)"/>
+<circle r="42" fill="none" stroke="#d99400" stroke-width="1.4" stroke-dasharray="5 7"/>
+</g>
+<g id="mnt71">
+<path d="M-26 16 Q0 -18 26 16 Z" fill="url(#tm71)" stroke="#a36e00" stroke-width="1.4"/>
+<path d="M-26 16 L26 16" stroke="#a36e00" stroke-width="2"/>
+<path d="M-8 6 Q0 -4 8 6" fill="none" stroke="#ffe9a0" stroke-width="2.4"/>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="#fffcef"/>
+<rect x="10" y="10" width="1204" height="1564" fill="none" stroke="url(#tm71h)" stroke-width="5"/>
+<rect x="30" y="30" width="1164" height="1524" fill="none" stroke="#245c14" stroke-width="2"/>
+<rect x="46" y="46" width="1132" height="1492" fill="none" stroke="url(#tm71h)" stroke-width="2"/>
+<rect x="88" y="88" width="1048" height="1408" fill="none" stroke="#d99400" stroke-width="1.1" stroke-dasharray="12 9"/>
+<g>
+<rect x="0" y="10" width="1224" height="46" fill="url(#bn71)"/>
+<path d="M0 33 L1224 33" stroke="#1a4a0e" stroke-width="5"/>
+<g stroke="#3f8f2f" stroke-width="1.8" fill="none">
+<path d="M40 33 L76 13"/><path d="M40 33 L76 53"/><path d="M116 33 L152 13"/><path d="M116 33 L152 53"/>
+<path d="M192 33 L228 13"/><path d="M192 33 L228 53"/><path d="M268 33 L304 13"/><path d="M268 33 L304 53"/>
+<path d="M344 33 L380 13"/><path d="M344 33 L380 53"/><path d="M420 33 L456 13"/><path d="M420 33 L456 53"/>
+<path d="M496 33 L532 13"/><path d="M496 33 L532 53"/><path d="M572 33 L608 13"/><path d="M572 33 L608 53"/>
+<path d="M648 33 L684 13"/><path d="M648 33 L684 53"/><path d="M724 33 L760 13"/><path d="M724 33 L760 53"/>
+<path d="M800 33 L836 13"/><path d="M800 33 L836 53"/><path d="M876 33 L912 13"/><path d="M876 33 L912 53"/>
+<path d="M952 33 L988 13"/><path d="M952 33 L988 53"/><path d="M1028 33 L1064 13"/><path d="M1028 33 L1064 53"/>
+<path d="M1104 33 L1140 13"/><path d="M1104 33 L1140 53"/><path d="M1180 33 L1216 13"/><path d="M1180 33 L1216 53"/>
+</g>
+<rect x="0" y="58" width="1224" height="4" fill="url(#tm71h)"/>
+<rect x="0" y="64" width="1224" height="28" fill="url(#tm71)"/>
+<rect x="0" y="64" width="1224" height="3" fill="#ffe9a0"/>
+<g>
+<use href="#lf71" transform="translate(44,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(106,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(168,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(230,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(292,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(354,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(416,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(478,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(540,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(612,68) rotate(180) scale(0.7)"/>
+<use href="#lf71" transform="translate(684,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(746,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(808,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(870,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(932,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(994,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(1056,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(1118,68) rotate(180) scale(0.62)"/>
+<use href="#lf71" transform="translate(1180,68) rotate(180) scale(0.62)"/>
+</g>
+<g fill="#d24b33">
+<circle cx="75" cy="72" r="4"/><circle cx="199" cy="72" r="4"/><circle cx="323" cy="72" r="4"/><circle cx="447" cy="72" r="4"/>
+<circle cx="579" cy="72" r="4.6"/><circle cx="715" cy="72" r="4"/><circle cx="839" cy="72" r="4"/><circle cx="963" cy="72" r="4"/><circle cx="1087" cy="72" r="4"/>
+</g>
+</g>
+<g>
+<circle cx="48" cy="48" r="31" fill="url(#cn71)"/>
+<path d="M-19 -19 Q0 -6 19 -19 M-22 0 Q0 12 22 0 M-19 19 Q0 6 19 19" transform="translate(48,48)" fill="none" stroke="#c9a06a" stroke-width="1.8" opacity="0.85"/>
+<circle cx="48" cy="48" r="37" fill="none" stroke="url(#gd71)" stroke-width="4"/>
+<use href="#lf71" transform="translate(32,18) rotate(-46) scale(0.72)"/>
+<use href="#lf71" transform="translate(64,18) rotate(46) scale(0.72)"/>
+<circle cx="48" cy="48" r="43" fill="none" stroke="#d99400" stroke-width="1.4" stroke-dasharray="5 7"/>
+<circle cx="1176" cy="48" r="31" fill="url(#cn71)"/>
+<path d="M-19 -19 Q0 -6 19 -19 M-22 0 Q0 12 22 0 M-19 19 Q0 6 19 19" transform="translate(1176,48)" fill="none" stroke="#c9a06a" stroke-width="1.8" opacity="0.85"/>
+<circle cx="1176" cy="48" r="37" fill="none" stroke="url(#gd71)" stroke-width="4"/>
+<use href="#lf71" transform="translate(1160,18) rotate(-46) scale(0.72)"/>
+<use href="#lf71" transform="translate(1192,18) rotate(46) scale(0.72)"/>
+<circle cx="1176" cy="48" r="43" fill="none" stroke="#d99400" stroke-width="1.4" stroke-dasharray="5 7"/>
+<circle cx="48" cy="1536" r="31" fill="url(#cn71)"/>
+<path d="M-19 -19 Q0 -6 19 -19 M-22 0 Q0 12 22 0 M-19 19 Q0 6 19 19" transform="translate(48,1536)" fill="none" stroke="#c9a06a" stroke-width="1.8" opacity="0.85"/>
+<circle cx="48" cy="1536" r="37" fill="none" stroke="url(#gd71)" stroke-width="4"/>
+<use href="#lf71" transform="translate(32,1506) rotate(-46) scale(0.72)"/>
+<use href="#lf71" transform="translate(64,1506) rotate(46) scale(0.72)"/>
+<circle cx="48" cy="1536" r="43" fill="none" stroke="#d99400" stroke-width="1.4" stroke-dasharray="5 7"/>
+<circle cx="1176" cy="1536" r="31" fill="url(#cn71)"/>
+<path d="M-19 -19 Q0 -6 19 -19 M-22 0 Q0 12 22 0 M-19 19 Q0 6 19 19" transform="translate(1176,1536)" fill="none" stroke="#c9a06a" stroke-width="1.8" opacity="0.85"/>
+<circle cx="1176" cy="1536" r="37" fill="none" stroke="url(#gd71)" stroke-width="4"/>
+<use href="#lf71" transform="translate(1160,1506) rotate(-46) scale(0.72)"/>
+<use href="#lf71" transform="translate(1192,1506) rotate(46) scale(0.72)"/>
+<circle cx="1176" cy="1536" r="43" fill="none" stroke="#d99400" stroke-width="1.4" stroke-dasharray="5 7"/>
+</g>
+<g fill="none" stroke="url(#gd71)" stroke-width="2.6">
+<path d="M48 160 L48 1440"/>
+<path d="M1176 160 L1176 1440"/>
+</g>
+<g>
+<use href="#lf71" transform="translate(48,260) rotate(90) scale(0.9)"/>
+<use href="#lf71" transform="translate(48,260) rotate(-90) scale(0.9)"/>
+<use href="#ap71" transform="translate(48,420) scale(0.85)"/>
+<use href="#mnt71" transform="translate(48,560) scale(0.8)"/>
+<use href="#lf71" transform="translate(48,720) rotate(90) scale(0.9)"/>
+<use href="#lf71" transform="translate(48,720) rotate(-90) scale(0.9)"/>
+<circle cx="48" cy="880" r="12" fill="url(#tm71)" stroke="#a36e00" stroke-width="1.6"/>
+<use href="#lf71" transform="translate(48,1040) rotate(90) scale(0.9)"/>
+<use href="#lf71" transform="translate(48,1040) rotate(-90) scale(0.9)"/>
+<use href="#ap71" transform="translate(48,1200) scale(0.85)"/>
+<use href="#mnt71" transform="translate(48,1340) scale(0.8)"/>
+<use href="#lf71" transform="translate(1176,260) rotate(90) scale(0.9)"/>
+<use href="#lf71" transform="translate(1176,260) rotate(-90) scale(0.9)"/>
+<use href="#ap71" transform="translate(1176,420) scale(0.85)"/>
+<use href="#mnt71" transform="translate(1176,560) scale(0.8)"/>
+<use href="#lf71" transform="translate(1176,720) rotate(90) scale(0.9)"/>
+<use href="#lf71" transform="translate(1176,720) rotate(-90) scale(0.9)"/>
+<circle cx="1176" cy="880" r="12" fill="url(#tm71)" stroke="#a36e00" stroke-width="1.6"/>
+<use href="#lf71" transform="translate(1176,1040) rotate(90) scale(0.9)"/>
+<use href="#lf71" transform="translate(1176,1040) rotate(-90) scale(0.9)"/>
+<use href="#ap71" transform="translate(1176,1200) scale(0.85)"/>
+<use href="#mnt71" transform="translate(1176,1340) scale(0.8)"/>
+</g>
+<g>
+<rect x="0" y="1532" width="1224" height="52" fill="url(#bn71)"/>
+<path d="M0 1556 L1224 1556" stroke="#1a4a0e" stroke-width="5"/>
+<g stroke="#3f8f2f" stroke-width="1.8" fill="none">
+<path d="M52 1556 L88 1536"/><path d="M52 1556 L88 1576"/><path d="M140 1556 L176 1536"/><path d="M140 1556 L176 1576"/>
+<path d="M228 1556 L264 1536"/><path d="M228 1556 L264 1576"/><path d="M316 1556 L352 1536"/><path d="M316 1556 L352 1576"/>
+<path d="M404 1556 L440 1536"/><path d="M404 1556 L440 1576"/><path d="M492 1556 L528 1536"/><path d="M492 1556 L528 1576"/>
+<path d="M580 1556 L616 1536"/><path d="M580 1556 L616 1576"/><path d="M668 1556 L704 1536"/><path d="M668 1556 L704 1576"/>
+<path d="M756 1556 L792 1536"/><path d="M756 1556 L792 1576"/><path d="M844 1556 L880 1536"/><path d="M844 1556 L880 1576"/>
+<path d="M932 1556 L968 1536"/><path d="M932 1556 L968 1576"/><path d="M1020 1556 L1056 1536"/><path d="M1020 1556 L1056 1576"/>
+<path d="M1108 1556 L1144 1536"/><path d="M1108 1556 L1144 1576"/><path d="M1188 1556 L1224 1536"/><path d="M1188 1556 L1224 1576"/>
+</g>
+</g>
+<g>
+<use href="#co71" transform="translate(612,1510)"/>
+<use href="#mnt71" transform="translate(500,1514) scale(1.15)"/>
+<use href="#mnt71" transform="translate(724,1514) scale(1.15)"/>
+<use href="#bnch71" transform="translate(392,1512) scale(1.05)"/>
+<use href="#bnch71" transform="translate(832,1512) scale(-1.05,1.05)"/>
+<use href="#ap71" transform="translate(300,1516) scale(1.1)"/>
+<use href="#ap71" transform="translate(924,1516) scale(1.1)"/>
+<use href="#lf71" transform="translate(192,1532) rotate(-32) scale(1.05)"/>
+<use href="#lf71" transform="translate(192,1532) rotate(32) scale(1.05)"/>
+<use href="#lf71" transform="translate(1032,1532) rotate(-32) scale(1.05)"/>
+<use href="#lf71" transform="translate(1032,1532) rotate(32) scale(1.05)"/>
+<circle cx="448" cy="1526" r="8" fill="#f7cd2e" stroke="#a36e00" stroke-width="1.4"/>
+<circle cx="776" cy="1526" r="8" fill="#f7cd2e" stroke="#a36e00" stroke-width="1.4"/>
+<circle cx="96" cy="1524" r="9" fill="#d24b33" stroke="#a36e00" stroke-width="1.4"/>
+<circle cx="1128" cy="1524" r="9" fill="#d24b33" stroke="#a36e00" stroke-width="1.4"/>
+</g>
+<g fill="none" stroke="url(#gd71)" stroke-width="2.4">
+<path d="M30 470 C58 500 58 540 30 570"/>
+<path d="M1194 470 C1166 500 1166 540 1194 570"/>
+<path d="M30 1014 C58 1044 58 1084 30 1114"/>
+<path d="M1194 1014 C1166 1044 1166 1084 1194 1114"/>
+</g>
+<g opacity="0.05" transform="translate(612,792)">
+<circle r="170" fill="none" stroke="#d99400" stroke-width="6"/>
+<circle r="138" fill="none" stroke="#245c14" stroke-width="4"/>
+<use href="#lf71" transform="translate(0,-60) scale(4.2)"/>
+<use href="#lf71" transform="translate(0,-60) rotate(60) scale(4.2)"/>
+<use href="#lf71" transform="translate(0,-60) rotate(-60) scale(4.2)"/>
+<use href="#lf71" transform="translate(0,-60) rotate(120) scale(4.2)"/>
+<use href="#lf71" transform="translate(0,-60) rotate(-120) scale(4.2)"/>
+</g>
+<rect width="1224" height="1584" filter="url(#gr71)"/>
+</svg>

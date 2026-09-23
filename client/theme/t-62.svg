@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="bg62" x1="0" y1="0" x2="0.6" y2="1">
+<stop offset="0" stop-color="#fdfcf7"/>
+<stop offset="0.5" stop-color="#f8f5ec"/>
+<stop offset="1" stop-color="#f1ecdd"/>
+</linearGradient>
+<linearGradient id="nd62" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#26397a"/>
+<stop offset="0.5" stop-color="#1d2b5e"/>
+<stop offset="1" stop-color="#141f45"/>
+</linearGradient>
+<linearGradient id="rd62" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#cb303b"/>
+<stop offset="0.5" stop-color="#a81f2a"/>
+<stop offset="1" stop-color="#871319"/>
+</linearGradient>
+<filter id="bl62" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+<filter id="gr62"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<pattern id="gn62" width="14" height="14" patternUnits="userSpaceOnUse">
+<circle cx="7" cy="7" r="0.9" fill="#f7f4ec" opacity="0.35"/>
+</pattern>
+<pattern id="sw62" width="16" height="10" patternUnits="userSpaceOnUse">
+<path d="M0,0 L8,10 L16,0 Z" fill="#f7f4ec"/>
+</pattern>
+<pattern id="swv62" width="10" height="16" patternUnits="userSpaceOnUse">
+<path d="M0,0 L10,8 L0,16 Z" fill="#f7f4ec"/>
+</pattern>
+<g id="ey62">
+<ellipse rx="10" ry="6.5" fill="#f7f4ec"/>
+<circle r="3.4" fill="#1d2b5e"/>
+<circle cy="-1.2" r="1.1" fill="#f7f4ec"/>
+</g>
+<g id="st62">
+<path d="M19,0 L7.85,-3.25 L13.44,-13.44 L3.25,-7.85 L0,-19 L-3.25,-7.85 L-13.44,-13.44 L-7.85,-3.25 L-19,0 L-7.85,3.25 L-13.44,13.44 L-3.25,7.85 L0,19 L3.25,7.85 L13.44,13.44 L7.85,3.25 Z" fill="url(#rd62)" stroke="#f7f4ec" stroke-width="2"/>
+<circle r="6.5" fill="#f7f4ec"/>
+<circle r="2.8" fill="#1d2b5e"/>
+</g>
+<pattern id="eyr62" width="64.5" height="30" patternUnits="userSpaceOnUse" patternTransform="translate(96 16)">
+<use href="#ey62" transform="translate(32.25 15)"/>
+<path d="M0,15 L4,19 L0,23 L-4,19 Z" fill="#f7f4ec"/>
+<path d="M64.5,15 L68.5,19 L64.5,23 L60.5,19 Z" fill="#f7f4ec"/>
+</pattern>
+<pattern id="stp62" width="129" height="96" patternUnits="userSpaceOnUse" patternTransform="translate(96 0)">
+<use href="#st62" transform="translate(36 68)"/>
+<use href="#st62" transform="translate(96 68)"/>
+<path d="M64,62 H74 M69,57 V73" stroke="#f7f4ec" stroke-width="2"/>
+<path d="M4,62 H14 M9,57 V73 M119,62 H129 M124,57 V73" stroke="#f7f4ec" stroke-width="1.6" opacity="0.85"/>
+</pattern>
+<pattern id="dt62" width="12" height="7" patternUnits="userSpaceOnUse" patternTransform="translate(96 89)">
+<circle cx="6" cy="3.5" r="2.4" fill="#f7f4ec"/>
+</pattern>
+<pattern id="sv62" width="96" height="116" patternUnits="userSpaceOnUse" patternTransform="translate(0 96)">
+<rect x="0" y="0" width="11" height="116" fill="url(#swv62)"/>
+<rect x="14" y="0" width="30" height="116" fill="url(#rd62)"/>
+<path d="M12.5,0 V116 M45.5,0 V116" stroke="#f7f4ec" stroke-width="1.6"/>
+<use href="#ey62" transform="translate(29 58) rotate(90)"/>
+<use href="#st62" transform="translate(68 58) scale(0.85)"/>
+<path d="M60,14 H76 M68,6 V22 M60,102 H76 M68,94 V110" stroke="#f7f4ec" stroke-width="1.8"/>
+</pattern>
+<g id="bn62">
+<rect x="96" y="0" width="1032" height="96" fill="url(#nd62)"/>
+<rect x="96" y="0" width="1032" height="96" fill="url(#gn62)"/>
+<rect x="96" y="0" width="1032" height="10" fill="url(#sw62)"/>
+<path d="M96,11.5 H1128" stroke="#f7f4ec" stroke-width="1.6"/>
+<path d="M96,14 H1128" stroke="url(#rd62)" stroke-width="1.6"/>
+<rect x="96" y="16" width="1032" height="30" fill="url(#rd62)"/>
+<rect x="96" y="16" width="1032" height="30" fill="url(#eyr62)"/>
+<path d="M96,47 H1128" stroke="#f7f4ec" stroke-width="1.6"/>
+<path d="M96,49.5 H1128" stroke="#f7f4ec" stroke-width="0.9"/>
+<rect x="96" y="0" width="1032" height="96" fill="url(#stp62)"/>
+<path d="M96,89.5 H1128" stroke="#f7f4ec" stroke-width="1.4"/>
+<rect x="96" y="89" width="1032" height="7" fill="url(#dt62)"/>
+<path d="M96,94.5 H1128" stroke="url(#rd62)" stroke-width="1.6"/>
+</g>
+<g id="k62">
+<path d="M2,2 H94 V16 C60,20 34,46 30,78 C29,86 31,91 35,94 H2 Z" fill="url(#nd62)"/>
+<path d="M2,2 H94 V16 C60,20 34,46 30,78 C29,86 31,91 35,94 H2 Z" fill="url(#gn62)"/>
+<path d="M8,8 H80 V80 H8 Z" fill="none" stroke="#f7f4ec" stroke-width="1.4" stroke-dasharray="5 5" transform="rotate(45 44 44)"/>
+<path d="M44,4 L84,44 L44,84 L4,44 Z" fill="none" stroke="url(#rd62)" stroke-width="2.2"/>
+<use href="#st62" transform="translate(44 44) scale(2.1)"/>
+<path d="M10,10 H86 C56,15 34,42 30,72 C29,79 31,85 35,88 H10 Z" fill="none" stroke="#f7f4ec" stroke-width="1.5" stroke-dasharray="4 6"/>
+<g fill="#f7f4ec">
+<circle cx="44" cy="6" r="2.4"/>
+<circle cx="82" cy="44" r="2.4"/>
+<circle cx="6" cy="44" r="2.4"/>
+<circle cx="44" cy="86" r="2.4"/>
+</g>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="url(#bg62)"/>
+<path fill-rule="evenodd" fill="#f6f2e7" opacity="0.9" d="M0,0 H1224 V1584 H0 Z M96,96 H1128 V1488 H96 Z"/>
+<use href="#bn62"/>
+<use href="#bn62" transform="rotate(180 612 1536)"/>
+<rect x="0" y="96" width="96" height="1392" fill="url(#nd62)"/>
+<rect x="0" y="96" width="96" height="1392" fill="url(#gn62)"/>
+<rect x="0" y="96" width="96" height="1392" fill="url(#sv62)"/>
+<rect x="1128" y="96" width="96" height="1392" fill="url(#nd62)"/>
+<rect x="1128" y="96" width="96" height="1392" fill="url(#gn62)"/>
+<rect x="1128" y="96" width="96" height="1392" fill="url(#sv62)"/>
+<use href="#k62"/>
+<use href="#k62" transform="translate(1224 0) scale(-1 1)"/>
+<use href="#k62" transform="translate(0 1584) scale(1 -1)"/>
+<use href="#k62" transform="translate(1224 1584) scale(-1 -1)"/>
+<rect x="7" y="7" width="1210" height="1570" fill="none" stroke="url(#nd62)" stroke-width="11"/>
+<rect x="7" y="7" width="1210" height="1570" fill="none" stroke="#e8eefb" stroke-width="2" opacity="0.5" filter="url(#bl62)"/>
+<rect x="26" y="26" width="1172" height="1532" fill="none" stroke="url(#rd62)" stroke-width="3.5"/>
+<rect x="37" y="37" width="1150" height="1510" fill="none" stroke="#f7f4ec" stroke-width="1.6" stroke-dasharray="10 8"/>
+<rect x="87" y="87" width="1050" height="1410" fill="none" stroke="url(#rd62)" stroke-width="2.5"/>
+<rect x="93" y="93" width="1038" height="1398" fill="none" stroke="url(#nd62)" stroke-width="1.2" stroke-dasharray="4 7"/>
+<g opacity="0.055">
+<use href="#st62" transform="translate(612 1180) scale(6.2)"/>
+<path d="M612,990 L802,1180 L612,1370 L422,1180 Z" fill="none" stroke="#1d2b5e" stroke-width="6"/>
+<circle cx="612" cy="1180" r="96" fill="none" stroke="#a81f2a" stroke-width="5"/>
+</g>
+<rect width="1224" height="1584" filter="url(#gr62)" opacity="0.05"/>
+</svg>

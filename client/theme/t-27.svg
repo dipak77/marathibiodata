@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="g27" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#e6c877"/><stop offset="1" stop-color="#c79a3a"/>
+</linearGradient>
+<linearGradient id="s27" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#a8cbb2"/><stop offset="1" stop-color="#7fa88a"/>
+</linearGradient>
+<symbol id="mogra27" viewBox="-18 -18 36 36">
+<circle cy="-10" r="7.5" fill="#fffdfb" stroke="#d9c48f" stroke-width="1.4"/>
+<circle cx="9.5" cy="-3" r="7.5" fill="#fffdfb" stroke="#d9c48f" stroke-width="1.4"/>
+<circle cx="5.9" cy="8.1" r="7.5" fill="#fffdfb" stroke="#d9c48f" stroke-width="1.4"/>
+<circle cx="-5.9" cy="8.1" r="7.5" fill="#fffdfb" stroke="#d9c48f" stroke-width="1.4"/>
+<circle cx="-9.5" cy="-3" r="7.5" fill="#fffdfb" stroke="#d9c48f" stroke-width="1.4"/>
+<circle r="4.5" fill="#f3e2ad"/>
+</symbol>
+<symbol id="bud27" viewBox="-6 -10 12 20">
+<ellipse rx="5" ry="9" fill="#fffdfb" stroke="#d9c48f" stroke-width="1.3"/>
+<path d="M0 8V15" stroke="#7fa88a" stroke-width="2"/>
+</symbol>
+<symbol id="leaf27" viewBox="-14 -7 28 14">
+<path d="M-13 0 Q0 -8 13 0 Q0 8 -13 0Z" fill="url(#s27)" opacity="0.9"/>
+</symbol>
+</defs>
+<rect width="1224" height="1584" fill="#fffdfb"/>
+<rect x="7" y="7" width="1210" height="1570" fill="none" stroke="url(#g27)" stroke-width="1.5" opacity="0.85"/>
+<g fill="none" stroke="#7fa88a" stroke-width="2.6" stroke-linecap="round" opacity="0.9">
+<path d="M60 44 C180 18 300 72 420 44 C540 16 660 70 780 44 C900 18 1020 72 1140 44 C1160 40 1176 42 1186 44"/>
+<path d="M60 1540 C180 1566 300 1512 420 1540 C540 1568 660 1514 780 1540 C900 1566 1020 1512 1140 1540 C1160 1544 1176 1542 1186 1540"/>
+<path d="M44 60 C18 180 70 300 44 420 C18 540 70 660 44 780 C18 900 70 1020 44 1140 C30 1260 66 1380 44 1500"/>
+<path d="M1180 60 C1206 180 1154 300 1180 420 C1206 540 1154 660 1180 780 C1206 900 1154 1020 1180 1140 C1194 1260 1158 1380 1180 1500"/>
+</g>
+<g>
+<use href="#mogra27" x="122" y="26" width="36" height="36"/>
+<use href="#mogra27" x="282" y="30" width="36" height="36"/>
+<use href="#mogra27" x="402" y="26" width="36" height="36"/>
+<use href="#mogra27" x="522" y="22" width="36" height="36"/>
+<use href="#mogra27" x="642" y="32" width="36" height="36"/>
+<use href="#mogra27" x="762" y="26" width="36" height="36"/>
+<use href="#mogra27" x="882" y="26" width="36" height="36"/>
+<use href="#mogra27" x="1002" y="36" width="36" height="36"/>
+<use href="#mogra27" x="1104" y="26" width="36" height="36"/>
+<use href="#leaf27" x="96" y="48" width="28" height="14" transform="rotate(-25 110 55)"/>
+<use href="#leaf27" x="336" y="52" width="28" height="14" transform="rotate(20 350 59)"/>
+<use href="#leaf27" x="576" y="44" width="28" height="14" transform="rotate(-18 590 51)"/>
+<use href="#leaf27" x="816" y="48" width="28" height="14" transform="rotate(22 830 55)"/>
+<use href="#leaf27" x="1056" y="52" width="28" height="14" transform="rotate(-20 1070 59)"/>
+</g>
+<g>
+<use href="#mogra27" x="122" y="1522" width="36" height="36"/>
+<use href="#mogra27" x="282" y="1526" width="36" height="36"/>
+<use href="#mogra27" x="402" y="1522" width="36" height="36"/>
+<use href="#mogra27" x="522" y="1526" width="36" height="36"/>
+<use href="#mogra27" x="642" y="1520" width="36" height="36"/>
+<use href="#mogra27" x="762" y="1526" width="36" height="36"/>
+<use href="#mogra27" x="882" y="1522" width="36" height="36"/>
+<use href="#mogra27" x="1002" y="1524" width="36" height="36"/>
+<use href="#mogra27" x="1104" y="1522" width="36" height="36"/>
+<use href="#leaf27" x="96" y="1520" width="28" height="14" transform="rotate(25 110 1527)"/>
+<use href="#leaf27" x="336" y="1518" width="28" height="14" transform="rotate(-20 350 1525)"/>
+<use href="#leaf27" x="576" y="1524" width="28" height="14" transform="rotate(18 590 1531)"/>
+<use href="#leaf27" x="816" y="1518" width="28" height="14" transform="rotate(-22 830 1525)"/>
+<use href="#leaf27" x="1056" y="1522" width="28" height="14" transform="rotate(20 1070 1529)"/>
+</g>
+<g>
+<use href="#mogra27" x="26" y="142" width="36" height="36"/>
+<use href="#mogra27" x="26" y="262" width="36" height="36"/>
+<use href="#mogra27" x="26" y="382" width="36" height="36"/>
+<use href="#mogra27" x="26" y="502" width="36" height="36"/>
+<use href="#mogra27" x="26" y="622" width="36" height="36"/>
+<use href="#mogra27" x="26" y="742" width="36" height="36"/>
+<use href="#mogra27" x="26" y="862" width="36" height="36"/>
+<use href="#mogra27" x="26" y="982" width="36" height="36"/>
+<use href="#mogra27" x="26" y="1102" width="36" height="36"/>
+<use href="#mogra27" x="26" y="1222" width="36" height="36"/>
+<use href="#mogra27" x="26" y="1342" width="36" height="36"/>
+<use href="#leaf27" x="40" y="200" width="28" height="14" transform="rotate(70 54 207)"/>
+<use href="#leaf27" x="40" y="440" width="28" height="14" transform="rotate(110 54 447)"/>
+<use href="#leaf27" x="40" y="680" width="28" height="14" transform="rotate(70 54 687)"/>
+<use href="#leaf27" x="40" y="920" width="28" height="14" transform="rotate(110 54 927)"/>
+<use href="#leaf27" x="40" y="1160" width="28" height="14" transform="rotate(70 54 1167)"/>
+</g>
+<g>
+<use href="#mogra27" x="1162" y="142" width="36" height="36"/>
+<use href="#mogra27" x="1162" y="262" width="36" height="36"/>
+<use href="#mogra27" x="1162" y="382" width="36" height="36"/>
+<use href="#mogra27" x="1162" y="502" width="36" height="36"/>
+<use href="#mogra27" x="1162" y="622" width="36" height="36"/>
+<use href="#mogra27" x="1162" y="742" width="36" height="36"/>
+<use href="#mogra27" x="1162" y="862" width="36" height="36"/>
+<use href="#mogra27" x="1162" y="982" width="36" height="36"/>
+<use href="#mogra27" x="1162" y="1102" width="36" height="36"/>
+<use href="#mogra27" x="1162" y="1222" width="36" height="36"/>
+<use href="#mogra27" x="1162" y="1342" width="36" height="36"/>
+<use href="#leaf27" x="1140" y="200" width="28" height="14" transform="rotate(-70 1154 207)"/>
+<use href="#leaf27" x="1140" y="440" width="28" height="14" transform="rotate(-110 1154 447)"/>
+<use href="#leaf27" x="1140" y="680" width="28" height="14" transform="rotate(-70 1154 687)"/>
+<use href="#leaf27" x="1140" y="920" width="28" height="14" transform="rotate(-110 1154 927)"/>
+<use href="#leaf27" x="1140" y="1160" width="28" height="14" transform="rotate(-70 1154 1167)"/>
+</g>
+<g>
+<use href="#mogra27" x="34" y="34" width="62" height="62"/>
+<use href="#mogra27" x="1128" y="34" width="62" height="62"/>
+<use href="#mogra27" x="34" y="1488" width="62" height="62"/>
+<use href="#mogra27" x="1128" y="1488" width="62" height="62"/>
+<use href="#bud27" x="104" y="70" width="12" height="20"/>
+<use href="#bud27" x="1108" y="70" width="12" height="20"/>
+<use href="#bud27" x="104" y="1494" width="12" height="20"/>
+<use href="#bud27" x="1108" y="1494" width="12" height="20"/>
+</g>
+<g fill="#c79a3a" opacity="0.75">
+<circle cx="200" cy="48" r="3"/><circle cx="480" cy="52" r="3"/><circle cx="720" cy="46" r="3"/><circle cx="960" cy="52" r="3"/>
+<circle cx="200" cy="1536" r="3"/><circle cx="480" cy="1532" r="3"/><circle cx="720" cy="1538" r="3"/><circle cx="960" cy="1532" r="3"/>
+<circle cx="48" cy="340" r="3"/><circle cx="48" cy="820" r="3"/><circle cx="48" cy="1300" r="3"/>
+<circle cx="1176" cy="340" r="3"/><circle cx="1176" cy="820" r="3"/><circle cx="1176" cy="1300" r="3"/>
+</g>
+</svg>

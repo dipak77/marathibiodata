@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="rd" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#9b1c1c"/>
+<stop offset="1" stop-color="#c0392b"/>
+</linearGradient>
+<linearGradient id="gd" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#e0b457"/>
+<stop offset="1" stop-color="#c79a3a"/>
+</linearGradient>
+<path id="pais" d="M92 8 C118 28 124 66 104 90 C86 112 50 114 30 96 C48 102 68 96 78 80 C90 60 84 36 64 22 C72 12 82 6 92 8 Z"/>
+<pattern id="phT" width="104" height="96" patternUnits="userSpaceOnUse" patternTransform="translate(96 0)">
+<path d="M92 8 C118 28 124 66 104 90 C86 112 50 114 30 96 C48 102 68 96 78 80 C90 60 84 36 64 22 C72 12 82 6 92 8 Z" transform="translate(14 16) scale(0.6)" fill="#9b1c1c" stroke="#c79a3a" stroke-width="4"/>
+<circle cx="4" cy="48" r="5" fill="#e0b457"/>
+<circle cx="98" cy="48" r="5" fill="#e0b457"/>
+</pattern>
+<pattern id="pvL" width="96" height="116" patternUnits="userSpaceOnUse" patternTransform="translate(0 96)">
+<path d="M92 8 C118 28 124 66 104 90 C86 112 50 114 30 96 C48 102 68 96 78 80 C90 60 84 36 64 22 C72 12 82 6 92 8 Z" transform="translate(81 15.65) rotate(90) scale(0.55)" fill="#9b1c1c" stroke="#c79a3a" stroke-width="4"/>
+<circle cx="48" cy="100" r="5" fill="#e0b457"/>
+</pattern>
+<pattern id="pvR" width="96" height="116" patternUnits="userSpaceOnUse" patternTransform="translate(1128 96)">
+<path d="M92 8 C118 28 124 66 104 90 C86 112 50 114 30 96 C48 102 68 96 78 80 C90 60 84 36 64 22 C72 12 82 6 92 8 Z" transform="translate(15 100.35) rotate(-90) scale(0.55)" fill="#9b1c1c" stroke="#c79a3a" stroke-width="4"/>
+<circle cx="48" cy="16" r="5" fill="#e0b457"/>
+</pattern>
+<g id="lot">
+<ellipse rx="8" ry="25" fill="#c0392b" stroke="#c79a3a" stroke-width="2"/>
+<ellipse rx="8" ry="25" fill="#c0392b" stroke="#c79a3a" stroke-width="2" transform="rotate(45)"/>
+<ellipse rx="8" ry="25" fill="#c0392b" stroke="#c79a3a" stroke-width="2" transform="rotate(90)"/>
+<ellipse rx="8" ry="25" fill="#c0392b" stroke="#c79a3a" stroke-width="2" transform="rotate(135)"/>
+<ellipse rx="6" ry="17" fill="#e0b457" transform="rotate(22.5)"/>
+<ellipse rx="6" ry="17" fill="#e0b457" transform="rotate(67.5)"/>
+<ellipse rx="6" ry="17" fill="#e0b457" transform="rotate(112.5)"/>
+<ellipse rx="6" ry="17" fill="#e0b457" transform="rotate(157.5)"/>
+<circle r="8" fill="#9b1c1c" stroke="#c79a3a" stroke-width="2"/>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="#fffaf2"/>
+<path fill-rule="evenodd" fill="url(#gd)" opacity="0.18" d="M0 0H1224V1584H0Z M96 96H1128V1488H96Z"/>
+<rect x="8" y="8" width="1208" height="1568" fill="none" stroke="url(#rd)" stroke-width="12"/>
+<rect x="30" y="30" width="1164" height="1524" fill="none" stroke="url(#gd)" stroke-width="3"/>
+<rect x="90" y="90" width="1044" height="1404" fill="none" stroke="url(#rd)" stroke-width="2"/>
+<rect x="96" y="0" width="1032" height="96" fill="url(#phT)"/>
+<rect x="96" y="1488" width="1032" height="96" fill="url(#phT)" transform="rotate(180 612 1536)"/>
+<rect x="0" y="96" width="96" height="1392" fill="url(#pvL)"/>
+<rect x="1128" y="96" width="96" height="1392" fill="url(#pvR)"/>
+<use href="#lot" x="52" y="52"/>
+<use href="#lot" x="1172" y="52"/>
+<use href="#lot" x="52" y="1532"/>
+<use href="#lot" x="1172" y="1532"/>
+</svg>

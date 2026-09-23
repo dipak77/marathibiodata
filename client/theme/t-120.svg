@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<radialGradient id="mir120" cx="0.35" cy="0.32" r="0.75">
+<stop offset="0" stop-color="#ffffff"/>
+<stop offset="0.45" stop-color="#eef2f5"/>
+<stop offset="1" stop-color="#b9c4cc"/>
+</radialGradient>
+<linearGradient id="gb120" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#e03434"/>
+<stop offset="0.33" stop-color="#f2c115"/>
+<stop offset="0.66" stop-color="#1f9d61"/>
+<stop offset="1" stop-color="#2a67d8"/>
+</linearGradient>
+<filter id="gr120" x="0%" y="0%" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="saturate" values="0"/>
+</filter>
+<g id="seq120">
+<circle r="15" fill="none" stroke="#e03434" stroke-width="4" stroke-dasharray="4 3" stroke-linecap="round"/>
+<circle r="11" fill="url(#mir120)" stroke="#2a67d8" stroke-width="1.4"/>
+<circle cx="-4" cy="-4" r="3.4" fill="#ffffff" opacity="0.95"/>
+<circle cx="4" cy="5" r="1.6" fill="#f2c115" opacity="0.8"/>
+</g>
+<g id="seqb120">
+<circle r="11" fill="none" stroke="#1f9d61" stroke-width="3.4" stroke-dasharray="3.5 3" stroke-linecap="round"/>
+<circle r="7.6" fill="url(#mir120)" stroke="#d4359c" stroke-width="1.2"/>
+<circle cx="-2.6" cy="-2.6" r="2.2" fill="#ffffff" opacity="0.95"/>
+</g>
+<pattern id="ph120" width="72" height="96" patternUnits="userSpaceOnUse" patternTransform="translate(96 0)">
+<rect width="72" height="96" fill="#fbfaf6"/>
+<use href="#seq120" x="0" y="24"/>
+<use href="#seq120" x="36" y="24"/>
+<use href="#seq120" x="72" y="24"/>
+<rect x="5" y="52" width="34" height="36" rx="3" fill="none" stroke="#2a67d8" stroke-width="3.4" stroke-dasharray="4 3" stroke-linecap="round"/>
+<rect x="11" y="58" width="22" height="24" rx="2" fill="none" stroke="#ef7f1a" stroke-width="2.6" stroke-dasharray="3.5 3" stroke-linecap="round"/>
+<rect x="43" y="55" width="26" height="30" rx="3" fill="none" stroke="#d4359c" stroke-width="3.2" stroke-dasharray="4 3" stroke-linecap="round"/>
+<use href="#seqb120" x="56" y="70"/>
+<rect x="7" y="56" width="10" height="10" fill="none" stroke="#1f9d61" stroke-width="2.4" stroke-dasharray="3 2.5" stroke-linecap="round"/>
+<rect x="46" y="58" width="9" height="9" fill="none" stroke="#f2c115" stroke-width="2.4" stroke-dasharray="3 2.5" stroke-linecap="round"/>
+</pattern>
+<pattern id="pv120" width="96" height="72" patternUnits="userSpaceOnUse" patternTransform="translate(0 96)">
+<rect width="96" height="72" fill="#fbfaf6"/>
+<use href="#seq120" x="24" y="0"/>
+<use href="#seq120" x="24" y="36"/>
+<use href="#seq120" x="24" y="72"/>
+<rect x="52" y="5" width="36" height="30" rx="3" fill="none" stroke="#e03434" stroke-width="3.4" stroke-dasharray="4 3" stroke-linecap="round"/>
+<rect x="58" y="11" width="24" height="18" rx="2" fill="none" stroke="#2a67d8" stroke-width="2.6" stroke-dasharray="3.5 3" stroke-linecap="round"/>
+<rect x="55" y="42" width="30" height="26" rx="3" fill="none" stroke="#1f9d61" stroke-width="3.2" stroke-dasharray="4 3" stroke-linecap="round"/>
+<use href="#seqb120" x="70" y="55"/>
+<rect x="60" y="8" width="9" height="9" fill="none" stroke="#f2c115" stroke-width="2.4" stroke-dasharray="3 2.5" stroke-linecap="round"/>
+<rect x="58" y="46" width="10" height="10" fill="none" stroke="#d4359c" stroke-width="2.4" stroke-dasharray="3 2.5" stroke-linecap="round"/>
+</pattern>
+<g id="cor120">
+<circle r="42" fill="none" stroke="#1f9d61" stroke-width="5" stroke-dasharray="5 4" stroke-linecap="round"/>
+<circle r="34" fill="#fbfaf6" stroke="#e03434" stroke-width="4" stroke-dasharray="4.5 4" stroke-linecap="round"/>
+<circle r="26" fill="none" stroke="#2a67d8" stroke-width="4" stroke-dasharray="4 3.5" stroke-linecap="round"/>
+<circle r="18" fill="url(#mir120)" stroke="#d4359c" stroke-width="3" stroke-dasharray="3.5 3" stroke-linecap="round"/>
+<circle cx="-6" cy="-6" r="5" fill="#ffffff" opacity="0.95"/>
+<circle cx="6" cy="7" r="2.4" fill="#f2c115" opacity="0.9"/>
+<rect x="-52" y="-4" width="8" height="8" fill="none" stroke="#ef7f1a" stroke-width="2.6" stroke-dasharray="3 2.5" stroke-linecap="round"/>
+<rect x="44" y="-4" width="8" height="8" fill="none" stroke="#ef7f1a" stroke-width="2.6" stroke-dasharray="3 2.5" stroke-linecap="round"/>
+<rect x="-4" y="-52" width="8" height="8" fill="none" stroke="#d4359c" stroke-width="2.6" stroke-dasharray="3 2.5" stroke-linecap="round"/>
+<rect x="-4" y="44" width="8" height="8" fill="none" stroke="#d4359c" stroke-width="2.6" stroke-dasharray="3 2.5" stroke-linecap="round"/>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="#fbfaf6"/>
+<rect width="1224" height="1584" filter="url(#gr120)" opacity="0.045"/>
+<path fill-rule="evenodd" fill="url(#gb120)" opacity="0.10" d="M0 0H1224V1584H0Z M96 96H1128V1488H96Z"/>
+<rect x="6" y="6" width="1212" height="1572" fill="none" stroke="url(#gb120)" stroke-width="3.4"/>
+<rect x="16" y="16" width="1192" height="1552" fill="none" stroke="#2a67d8" stroke-width="1.4" stroke-dasharray="6 4"/>
+<rect x="88" y="88" width="1048" height="1408" fill="none" stroke="#e03434" stroke-width="1.4" stroke-dasharray="5 4"/>
+<rect x="96" y="0" width="1032" height="96" fill="url(#ph120)"/>
+<rect x="96" y="1488" width="1032" height="96" fill="url(#ph120)" transform="rotate(180 612 1536)"/>
+<rect x="0" y="96" width="96" height="1392" fill="url(#pv120)"/>
+<rect x="1128" y="96" width="96" height="1392" fill="url(#pv120)" transform="rotate(180 1176 792)"/>
+<rect x="96" y="96" width="1032" height="1392" fill="none" stroke="#1f9d61" stroke-width="1.6"/>
+<rect x="101" y="101" width="1022" height="1382" fill="none" stroke="#f2c115" stroke-width="1.1" opacity="0.85"/>
+<use href="#cor120" x="48" y="48"/>
+<use href="#cor120" x="1176" y="48"/>
+<use href="#cor120" x="48" y="1536"/>
+<use href="#cor120" x="1176" y="1536"/>
+<g opacity="0.055">
+<circle cx="612" cy="792" r="230" fill="none" stroke="#e03434" stroke-width="16" stroke-dasharray="12 10" stroke-linecap="round"/>
+<circle cx="612" cy="792" r="170" fill="url(#mir120)" stroke="#2a67d8" stroke-width="14" stroke-dasharray="10 9" stroke-linecap="round"/>
+<circle cx="612" cy="792" r="100" fill="none" stroke="#1f9d61" stroke-width="14" stroke-dasharray="9 8" stroke-linecap="round"/>
+</g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<rect width="1224" height="1584" fill="#ffffff"/>
+<rect x="0" y="0" width="8" height="1584" fill="#b99653"/>
+<rect x="16" y="0" width="6" height="1584" fill="#e7d3a9"/>
+<rect x="40" y="96" width="2" height="1392" fill="#2b2b2b"/>
+<g fill="#ffffff" stroke="#2b2b2b" stroke-width="1.5">
+<path d="M64 186l6 6-6 6-6-6zM64 426l6 6-6 6-6-6zM64 666l6 6-6 6-6-6zM64 906l6 6-6 6-6-6zM64 1146l6 6-6 6-6-6zM64 1386l6 6-6 6-6-6z"/>
+</g>
+<path d="M0 48h1224M0 1548h1224" fill="none" stroke="#2b2b2b" stroke-width="1"/>
+<path d="M0 48h300M924 1548h300" fill="none" stroke="#b99653" stroke-width="4"/>
+<rect x="1212" y="292" width="4" height="446" fill="#e7d3a9"/>
+<rect x="1213" y="860" width="2" height="240" fill="#b99653"/>
+<g fill="none" stroke="#b99653" stroke-width="2">
+<path d="M1210 88V24h-64"/>
+</g>
+<g fill="none" stroke="#2b2b2b" stroke-width="2">
+<path d="M14 1496v64h64"/>
+</g>
+<g fill="#b99653">
+<path d="M1214 848l5 5-5 5-5-5z"/>
+</g>
+<g fill="none" stroke="#2b2b2b" stroke-width="1.5">
+<path d="M1140 48v24M1092 1548v-24"/>
+</g>
+</svg>

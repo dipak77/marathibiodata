@@ -27,6 +27,7 @@
     renderGallery(currentCat);
     buildTestimonials();
     buildFaq();
+    renderHeroShowpiece();
   }
   $$('.lang-toggle button').forEach((b) => b.addEventListener('click', () => {
     lang = b.dataset.lang;
@@ -46,13 +47,93 @@
   }
 
   /* ---------------- Draft banner ---------------- */
-  if (localStorage.getItem('shubhbiodata.draft.v2')) {
+  if (localStorage.getItem('shubhbiodata.draft.v3') || localStorage.getItem('shubhbiodata.draft.v2')) {
     $('#draftBanner').classList.add('show');
   }
 
   /* ---------------- Gallery ---------------- */
-  const CATS = ['all', 'traditional', 'royal', 'minimal', 'floral'];
+  const CATS = ['all', 'traditional', 'royal', 'minimal', 'floral', 'regional', 'community', 'luxury', 'modern', 'festive'];
   let currentCat = 'all';
+
+  /* Filled preview: sample biodata + pro photo rendered over each theme */
+  const previewCache = new Map();
+  const previewQueue = [];
+  let previewBusy = false;
+  let fontsReady = null;
+
+  function ensurePreviewFonts() {
+    if (!window.BioRender) return Promise.resolve();
+    if (!fontsReady) fontsReady = window.BioRender.ensureFonts().catch(() => {});
+    return fontsReady;
+  }
+
+  function renderPreviewDataUrl(id, lg) {
+    const key = id + ':' + lg;
+    if (previewCache.has(key)) return Promise.resolve(previewCache.get(key));
+    if (!window.BioRender || !window.SampleData) return Promise.resolve(null);
+    return ensurePreviewFonts().then(() => {
+      const canvas = document.createElement('canvas');
+      const state = window.SampleData.stateFor(id, lg);
+      return window.BioRender.renderBiodata(canvas, state).then(() => {
+        let url;
+        try { url = canvas.toDataURL('image/jpeg', 0.86); } catch (e) { url = null; }
+        if (url) previewCache.set(key, url);
+        return url;
+      });
+    }).catch(() => null);
+  }
+
+  function enqueuePreview(id, imgEl, lg) {
+    previewQueue.push({ id, imgEl, lg });
+    if (!previewBusy) drainPreviewQueue();
+  }
+
+  /* Hero showpiece: live filled render of a premium theme */
+  const HERO_THEME = 148;
+  function renderHeroShowpiece() {
+    const img = document.querySelector('.hero-frame img');
+    if (!img || !window.BioRender || !window.SampleData) return;
+    const frame = document.querySelector('.hero-frame');
+    if (frame) frame.classList.add('hero-loading');
+    renderPreviewDataUrl(HERO_THEME, lang).then((url) => {
+      if (!url || !img.isConnected) return;
+      img.classList.add('hero-live');
+      img.src = url;
+      img.classList.add('loaded');
+      if (frame) frame.classList.remove('hero-loading');
+    });
+  }
+
+  function drainPreviewQueue() {
+    if (!previewQueue.length) { previewBusy = false; return; }
+    previewBusy = true;
+    const job = previewQueue.shift();
+    renderPreviewDataUrl(job.id, job.lg).then((url) => {
+      if (url && job.imgEl && job.imgEl.isConnected) {
+        job.imgEl.src = url;
+        job.imgEl.classList.add('loaded');
+      }
+      requestAnimationFrame(() => drainPreviewQueue());
+    });
+  }
+
+  const thumbIO = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      const img = e.target;
+      thumbIO.unobserve(img);
+      const id = parseInt(img.dataset.themeId, 10);
+      if (!id) return;
+      const lg = img.dataset.lang || lang;
+      if (previewCache.has(id + ':' + lg)) {
+        img.src = previewCache.get(id + ':' + lg);
+        img.classList.add('loaded');
+      } else {
+        enqueuePreview(id, img, lg);
+      }
+    });
+  }, { rootMargin: '240px 0px' });
+
   function buildFilters() {
     const g = T().gallery;
     const bar = $('#filterBar');
@@ -76,7 +157,7 @@
       card.style.transitionDelay = (i % 8) * 40 + 'ms';
       card.innerHTML =
         '<span class="tmpl-badge badge ' + (t.free ? 'badge-free' : 'badge-pro') + '">' + (t.free ? g.free : '✦ ' + g.pro) + '</span>' +
-        '<div class="tmpl-thumb"><img loading="lazy" src="theme/t-' + t.id + '.png" alt="' + name + '"></div>' +
+        '<div class="tmpl-thumb"><img loading="lazy" data-theme-id="' + t.id + '" data-lang="' + lang + '" src="' + themeSrc(t.id) + '" alt="' + name + '"></div>' +
         '<div class="tmpl-overlay">' +
         '  <button class="btn btn-ghost-dark btn-sm" data-act="preview">' + g.preview + '</button>' +
         '  <a class="btn btn-gold btn-sm" href="builder.html?theme=' + t.id + '">' + g.use + ' →</a>' +
@@ -84,13 +165,33 @@
         '<div class="tmpl-meta"><span class="t-name">' + name + '</span><span class="t-cat">' + g[t.cat] + '</span></div>';
       card.querySelector('.tmpl-thumb').addEventListener('click', () => openTmplModal(t));
       card.querySelector('[data-act="preview"]').addEventListener('click', () => openTmplModal(t));
+      const tImg = card.querySelector('.tmpl-thumb img');
+      const markLoaded = () => tImg.classList.add('loaded');
+      if (tImg.complete && tImg.naturalWidth) markLoaded();
+      else { tImg.addEventListener('load', markLoaded, { once: true }); tImg.addEventListener('error', markLoaded, { once: true }); }
+      thumbIO.observe(tImg);
       grid.appendChild(card);
     });
+  }
+  function themeSrc(id) {
+    if (window.themeSrc) return window.themeSrc(id);
+    const t = window.TEMPLATES.find((x) => x.id === id);
+    const ext = (t && t.ext) || 'png';
+    return 'theme/t-' + id + '.' + ext;
   }
   function openTmplModal(t) {
     const name = t.name[lang] || t.name.en;
     $('#tmplModalName').textContent = name;
-    $('#tmplModalImg').src = 'images/P' + t.id + '.png';
+    const img = $('#tmplModalImg');
+    const key = t.id + ':' + lang;
+    if (previewCache.has(key)) {
+      img.src = previewCache.get(key);
+    } else {
+      img.src = themeSrc(t.id);
+      renderPreviewDataUrl(t.id, lang).then((url) => {
+        if (url && $('#tmplModal').classList.contains('open')) img.src = url;
+      });
+    }
     $('#tmplModalUse').href = 'builder.html?theme=' + t.id;
     $('#tmplModal').classList.add('open');
   }
@@ -173,6 +274,161 @@
   }, { threshold: 0.6 });
   $$('[data-count]').forEach((el) => cio.observe(el));
 
+  /* ---------------- ULTRA FX v4 ---------------- */
+  (function ultraFx() {
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const fine = matchMedia('(pointer: fine)').matches;
+
+    /* Scroll progress + nav scrolled state */
+    const bar = $('#scrollProgress');
+    const nav = $('.nav-glass');
+    let sTick = false;
+    const onScroll = () => {
+      if (sTick) return;
+      sTick = true;
+      requestAnimationFrame(() => {
+        sTick = false;
+        const max = document.documentElement.scrollHeight - innerHeight;
+        if (bar) bar.style.width = (max > 0 ? (scrollY / max) * 100 : 0) + '%';
+        if (nav) nav.classList.toggle('scrolled', scrollY > 8);
+      });
+    };
+    addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    /* Cursor gold glow */
+    const glow = $('#cursorGlow');
+    if (glow && fine && !reduce) {
+      let gx = -999, gy = -999, cx = -999, cy = -999, raf = 0;
+      const loop = () => {
+        cx += (gx - cx) * 0.14;
+        cy += (gy - cy) * 0.14;
+        glow.style.transform = 'translate(' + cx + 'px,' + cy + 'px) translate(-50%,-50%)';
+        raf = requestAnimationFrame(loop);
+      };
+      document.addEventListener('pointermove', (e) => {
+        gx = e.clientX; gy = e.clientY;
+        if (cx < -900) { cx = gx; cy = gy; if (!raf) raf = requestAnimationFrame(loop); }
+      }, { passive: true });
+      raf = requestAnimationFrame(loop);
+    }
+
+    /* Spotlight + 3D tilt (event delegation) */
+    if (fine && !reduce) {
+      const spotSel = '.step-card, .feat-card, .price-card, .tmpl-card, .faq-item';
+      const tiltSel = '.tmpl-card, .step-card, .feat-card';
+      document.addEventListener('pointermove', (e) => {
+        const spot = e.target.closest && e.target.closest(spotSel);
+        if (spot) {
+          const r = spot.getBoundingClientRect();
+          spot.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+          spot.style.setProperty('--my', (e.clientY - r.top) + 'px');
+        }
+        const tilt = e.target.closest && e.target.closest(tiltSel);
+        if (tilt) {
+          const r = tilt.getBoundingClientRect();
+          const px = (e.clientX - r.left) / r.width - 0.5;
+          const py = (e.clientY - r.top) / r.height - 0.5;
+          tilt.style.transform = 'perspective(900px) rotateX(' + (-py * 7) + 'deg) rotateY(' + (px * 7) + 'deg) translateY(-5px)';
+        }
+      }, { passive: true });
+      document.addEventListener('pointerout', (e) => {
+        const t = e.target.closest && e.target.closest(tiltSel);
+        if (t && !t.contains(e.relatedTarget)) t.style.transform = '';
+      });
+    }
+
+    /* Magnetic gold buttons */
+    if (fine && !reduce) {
+      $$('.btn-gold:not(.btn-sm)').forEach((btn) => {
+        btn.addEventListener('pointermove', (e) => {
+          const r = btn.getBoundingClientRect();
+          const mx = e.clientX - r.left - r.width / 2;
+          const my = e.clientY - r.top - r.height / 2;
+          btn.style.transform = 'translate(' + mx * 0.12 + 'px,' + my * 0.2 + 'px)';
+        });
+        btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
+      });
+    }
+
+    /* Hero frame parallax */
+    const frame = $('.hero-frame');
+    const visual = $('.hero-visual');
+    if (frame && visual && fine && !reduce) {
+      visual.addEventListener('pointermove', (e) => {
+        const r = visual.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - 0.5;
+        const py = (e.clientY - r.top) / r.height - 0.5;
+        frame.style.transform = 'perspective(900px) rotateY(' + (px * 6) + 'deg) rotateX(' + (-py * 6) + 'deg)';
+      });
+      visual.addEventListener('pointerleave', () => { frame.style.transform = ''; });
+      frame.style.transition = 'transform .18s ease-out';
+    }
+
+    /* Hero stagger entrance */
+    if (!reduce) {
+      const left = $('.hero-grid > div:first-child');
+      if (left) {
+        let i = 0;
+        Array.from(left.children).forEach((el) => {
+          if (el.classList.contains('hero-stats') || el.classList.contains('draft-banner')) return;
+          el.classList.add('hero-anim');
+          el.style.animationDelay = (0.08 + i * 0.09) + 's';
+          i++;
+        });
+      }
+      if (visual) { visual.classList.remove('rv', 'rv-d2'); visual.classList.add('hero-anim'); visual.style.animationDelay = '0.45s'; }
+    }
+
+    /* Hero gold dust canvas */
+    const dust = $('.hero-dust');
+    const hero = $('.hero');
+    if (dust && hero && !reduce) {
+      const ctx = dust.getContext('2d');
+        if (ctx) {
+          let W = 0, H = 0, dpr = 1, parts = [], run = true;
+          const n = () => (innerWidth < 640 ? 24 : 48);
+          const resize = () => {
+            dpr = Math.min(devicePixelRatio || 1, 2);
+            W = hero.clientWidth; H = hero.clientHeight;
+            dust.width = W * dpr; dust.height = H * dpr;
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          };
+          const seed = () => {
+            parts = Array.from({ length: n() }, () => ({
+              x: Math.random() * W, y: Math.random() * H,
+              r: 0.6 + Math.random() * 1.9,
+              vy: 0.12 + Math.random() * 0.35,
+              vx: (Math.random() - 0.5) * 0.18,
+              a: 0.25 + Math.random() * 0.6,
+              tw: Math.random() * Math.PI * 2
+            }));
+          };
+          resize(); seed();
+          new ResizeObserver(() => { resize(); if (parts.length !== n()) seed(); }).observe(hero);
+          new IntersectionObserver((en) => { run = en[0].isIntersecting; }).observe(hero);
+          function tick() {
+            requestAnimationFrame(tick);
+            if (!run || document.hidden || !dust.clientWidth) return;
+            ctx.clearRect(0, 0, W, H);
+            for (const p of parts) {
+              p.y -= p.vy; p.x += p.vx; p.tw += 0.03;
+              if (p.y < -6) { p.y = H + 6; p.x = Math.random() * W; }
+              if (p.x < -6) p.x = W + 6; else if (p.x > W + 6) p.x = -6;
+              const al = p.a * (0.55 + 0.45 * Math.sin(p.tw));
+              ctx.beginPath();
+              ctx.fillStyle = 'rgba(246,216,146,' + al.toFixed(3) + ')';
+              ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+              ctx.fill();
+            }
+          }
+          requestAnimationFrame(tick);
+        }
+    }
+  })();
+
   /* ---------------- Init ---------------- */
   applyLang();
+  if (document.readyState === 'complete') renderHeroShowpiece();
+  else window.addEventListener('load', renderHeroShowpiece, { once: true });
 })();

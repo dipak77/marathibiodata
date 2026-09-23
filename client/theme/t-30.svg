@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<rect width="1224" height="1584" fill="#fdfcf9"/>
+<rect x="40" y="40" width="1144" height="1504" fill="none" stroke="#b99653" stroke-width="2"/>
+<rect x="56" y="56" width="1112" height="1472" fill="none" stroke="#2b2b2b" stroke-width="1"/>
+<g stroke="#e7d3a9" stroke-width="4">
+<path d="M160 48h320M744 48h320M160 1536h320M744 1536h320"/>
+<path d="M48 200v480M48 904v480M1176 200v480M1176 904v480"/>
+</g>
+<g fill="none" stroke="#b99653" stroke-width="1.5">
+<path d="M612 40l8 8-8 8-8-8zM612 1528l8 8-8 8-8-8z"/>
+<path d="M40 784l8 8-8 8-8-8zM1176 784l8 8-8 8-8-8z"/>
+</g>
+<g fill="#b99653">
+<path d="M56 51l5 5-5 5-5-5zM1168 51l5 5-5 5-5-5zM56 1523l5 5-5 5-5-5zM1168 1523l5 5-5 5-5-5z"/>
+</g>
+<g fill="none" stroke="#2b2b2b" stroke-width="2">
+<path d="M40 20V40H20M1184 20V40H1204M40 1564V1544H20M1184 1564V1544H1204"/>
+</g>
+<g fill="none" stroke="#2b2b2b" stroke-width="1.5">
+<path d="M120 40v16M1104 40v16M120 1544v-16M1104 1544v-16"/>
+<path d="M40 240h16M40 1344h16M1184 240h-16M1184 1344h-16"/>
+</g>
+</svg>

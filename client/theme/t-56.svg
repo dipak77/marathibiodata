@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="bg56" x1="0" y1="0" x2="0.7" y2="1">
+<stop offset="0" stop-color="#fffefa"/>
+<stop offset="0.5" stop-color="#fdf8ee"/>
+<stop offset="1" stop-color="#faf0dc"/>
+</linearGradient>
+<linearGradient id="rd56g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#e03a3a"/>
+<stop offset="1" stop-color="#b81c24"/>
+</linearGradient>
+<linearGradient id="yl56g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#ffd94a"/>
+<stop offset="1" stop-color="#e8b40c"/>
+</linearGradient>
+<linearGradient id="gr56g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#2fa36c"/>
+<stop offset="1" stop-color="#157347"/>
+</linearGradient>
+<filter id="bl56" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+<filter id="grn56"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<pattern id="wd56" width="26" height="26" patternUnits="userSpaceOnUse">
+<circle cx="13" cy="13" r="5" fill="none" stroke="#fff8e4" stroke-width="3"/>
+<circle cx="13" cy="13" r="1.8" fill="#f5c518"/>
+<circle cx="0" cy="0" r="3.4" fill="none" stroke="#fff8e4" stroke-width="2.4"/>
+<circle cx="26" cy="0" r="3.4" fill="none" stroke="#fff8e4" stroke-width="2.4"/>
+<circle cx="0" cy="26" r="3.4" fill="none" stroke="#fff8e4" stroke-width="2.4"/>
+<circle cx="26" cy="26" r="3.4" fill="none" stroke="#fff8e4" stroke-width="2.4"/>
+</pattern>
+<pattern id="rd56p" width="26" height="26" patternUnits="userSpaceOnUse">
+<circle cx="13" cy="13" r="4.6" fill="none" stroke="#c8232c" stroke-width="2.6"/>
+<circle cx="13" cy="13" r="1.6" fill="#fff8e4"/>
+<circle cx="0" cy="0" r="3" fill="none" stroke="#c8232c" stroke-width="2"/>
+<circle cx="26" cy="0" r="3" fill="none" stroke="#c8232c" stroke-width="2"/>
+<circle cx="0" cy="26" r="3" fill="none" stroke="#c8232c" stroke-width="2"/>
+<circle cx="26" cy="26" r="3" fill="none" stroke="#c8232c" stroke-width="2"/>
+</pattern>
+<pattern id="dm56" width="129" height="50" patternUnits="userSpaceOnUse" patternTransform="translate(96 0)">
+<path d="M64.5,7 L78,25 L64.5,43 L51,25 Z" fill="none" stroke="#fff8e4" stroke-width="2.4"/>
+<circle cx="64.5" cy="25" r="3.5" fill="#f5c518"/>
+<circle cx="0" cy="0" r="2" fill="#fff8e4"/>
+<circle cx="129" cy="0" r="2" fill="#fff8e4"/>
+<circle cx="0" cy="50" r="2" fill="#fff8e4"/>
+<circle cx="129" cy="50" r="2" fill="#fff8e4"/>
+</pattern>
+<pattern id="dms56" width="40" height="58" patternUnits="userSpaceOnUse">
+<path d="M20,12 L30,29 L20,46 L10,29 Z" fill="none" stroke="#fff8e4" stroke-width="2.2"/>
+<circle cx="20" cy="29" r="3" fill="#f5c518"/>
+</pattern>
+<pattern id="wv56" width="52" height="14" patternUnits="userSpaceOnUse">
+<path d="M0,7 q13,-7 26,0 t26,0" fill="none" stroke="#fff8e4" stroke-width="2.6"/>
+</pattern>
+<pattern id="wvv56" width="12" height="52" patternUnits="userSpaceOnUse">
+<path d="M4,0 q-7,13 0,26 t0,26" fill="none" stroke="#fff8e4" stroke-width="2.6"/>
+</pattern>
+<clipPath id="ck56"><circle cx="44" cy="44" r="34"/></clipPath>
+<g id="bn56">
+<rect x="96" y="0" width="1032" height="50" fill="url(#rd56g)"/>
+<rect x="96" y="0" width="1032" height="50" fill="url(#wd56)"/>
+<rect x="96" y="0" width="1032" height="50" fill="url(#dm56)"/>
+<rect x="96" y="50" width="1032" height="22" fill="url(#gr56g)"/>
+<rect x="96" y="50" width="1032" height="22" fill="url(#rd56p)"/>
+<rect x="96" y="72" width="1032" height="24" fill="url(#yl56g)"/>
+<rect x="96" y="72" width="1032" height="24" fill="url(#rd56p)"/>
+<rect x="96" y="43" width="1032" height="14" fill="url(#wv56)"/>
+<rect x="96" y="65" width="1032" height="14" fill="url(#wv56)"/>
+<rect x="96" y="89" width="1032" height="14" fill="url(#wv56)"/>
+</g>
+<g id="k56">
+<path d="M2,2 H94 V14 C60,18 34,46 30,78 C29,86 31,91 35,94 H2 Z" fill="url(#rd56g)"/>
+<path d="M10,10 H86 C56,15 34,42 30,72 C29,80 31,86 35,88 H10 Z" fill="none" stroke="#fff8e4" stroke-width="2" stroke-dasharray="6 5"/>
+<g clip-path="url(#ck56)">
+<rect x="10" y="10" width="68" height="68" fill="url(#gr56g)"/>
+<rect x="10" y="10" width="68" height="68" fill="url(#wd56)"/>
+<circle cx="44" cy="44" r="16" fill="url(#yl56g)" stroke="#fff8e4" stroke-width="2.5"/>
+<circle cx="44" cy="44" r="6" fill="#c8232c"/>
+</g>
+<circle cx="44" cy="44" r="34" fill="none" stroke="#fff8e4" stroke-width="3"/>
+<circle cx="44" cy="44" r="38.5" fill="none" stroke="#f5c518" stroke-width="2.2" stroke-dasharray="4 6"/>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="url(#bg56)"/>
+<path fill-rule="evenodd" fill="#fdf6e8" opacity="0.85" d="M0,0 H1224 V1584 H0 Z M96,96 H1128 V1488 H96 Z"/>
+<use href="#bn56"/>
+<use href="#bn56" transform="rotate(180 612 1536)"/>
+<rect x="0" y="96" width="40" height="1392" fill="url(#rd56g)"/>
+<rect x="0" y="96" width="40" height="1392" fill="url(#wd56)"/>
+<rect x="0" y="96" width="40" height="1392" fill="url(#dms56)"/>
+<rect x="40" y="96" width="24" height="1392" fill="url(#yl56g)"/>
+<rect x="40" y="96" width="24" height="1392" fill="url(#rd56p)"/>
+<rect x="64" y="96" width="32" height="1392" fill="url(#gr56g)"/>
+<rect x="64" y="96" width="32" height="1392" fill="url(#wd56)"/>
+<rect x="33" y="96" width="14" height="1392" fill="url(#wvv56)"/>
+<rect x="57" y="96" width="14" height="1392" fill="url(#wvv56)"/>
+<rect x="1184" y="96" width="40" height="1392" fill="url(#rd56g)"/>
+<rect x="1184" y="96" width="40" height="1392" fill="url(#wd56)"/>
+<rect x="1184" y="96" width="40" height="1392" fill="url(#dms56)"/>
+<rect x="1160" y="96" width="24" height="1392" fill="url(#yl56g)"/>
+<rect x="1160" y="96" width="24" height="1392" fill="url(#rd56p)"/>
+<rect x="1128" y="96" width="32" height="1392" fill="url(#gr56g)"/>
+<rect x="1128" y="96" width="32" height="1392" fill="url(#wd56)"/>
+<rect x="1177" y="96" width="14" height="1392" fill="url(#wvv56)"/>
+<rect x="1153" y="96" width="14" height="1392" fill="url(#wvv56)"/>
+<use href="#k56"/>
+<use href="#k56" transform="translate(1224 0) scale(-1 1)"/>
+<use href="#k56" transform="translate(0 1584) scale(1 -1)"/>
+<use href="#k56" transform="translate(1224 1584) scale(-1 -1)"/>
+<rect x="8" y="8" width="1208" height="1568" fill="none" stroke="url(#rd56g)" stroke-width="11"/>
+<rect x="8" y="8" width="1208" height="1568" fill="none" stroke="#ffe9a8" stroke-width="2" opacity="0.5" filter="url(#bl56)"/>
+<rect x="27" y="27" width="1170" height="1530" fill="none" stroke="url(#yl56g)" stroke-width="3.5"/>
+<rect x="38" y="38" width="1148" height="1508" fill="none" stroke="#8c1418" stroke-width="1.6"/>
+<rect x="87" y="87" width="1050" height="1410" fill="none" stroke="url(#gr56g)" stroke-width="2.5"/>
+<rect x="92" y="92" width="1040" height="1400" fill="none" stroke="#c8232c" stroke-width="1" stroke-dasharray="3 9"/>
+<g opacity="0.055" fill="none" stroke-linecap="round">
+<circle cx="612" cy="1170" r="190" stroke="#c8232c" stroke-width="18" stroke-dasharray="1 30"/>
+<circle cx="612" cy="1170" r="140" stroke="#1f8a5c" stroke-width="16" stroke-dasharray="1 26"/>
+<circle cx="612" cy="1170" r="92" stroke="#e8b40c" stroke-width="14" stroke-dasharray="1 22"/>
+<circle cx="612" cy="1170" r="46" stroke="#c8232c" stroke-width="12" stroke-dasharray="1 18"/>
+</g>
+<rect width="1224" height="1584" filter="url(#grn56)" opacity="0.05"/>
+</svg>

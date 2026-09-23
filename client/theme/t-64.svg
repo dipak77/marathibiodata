@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="gd64" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#c9962f"/>
+<stop offset="0.5" stop-color="#f2d78c"/>
+<stop offset="1" stop-color="#c9962f"/>
+</linearGradient>
+<linearGradient id="rf64" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#e08a2a"/>
+<stop offset="0.55" stop-color="#b45a12"/>
+<stop offset="1" stop-color="#8a3f0a"/>
+</linearGradient>
+<linearGradient id="lf64" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#7cc342"/>
+<stop offset="1" stop-color="#2c6e1e"/>
+</linearGradient>
+<linearGradient id="pl64" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#a3651c"/>
+<stop offset="0.35" stop-color="#e8b45a"/>
+<stop offset="0.7" stop-color="#c98f30"/>
+<stop offset="1" stop-color="#a3651c"/>
+</linearGradient>
+<filter id="gr64" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+<feColorMatrix type="saturate" values="0"/>
+<feComponentTransfer><feFuncA type="table" tableValues="0 0.05"/></feComponentTransfer>
+</filter>
+<g id="lf64">
+<path d="M0 -18 C8 -7 8 10 0 24 C-8 10 -8 -7 0 -18Z" fill="url(#lf64)"/>
+<path d="M0 -15 L0 21" stroke="#1f5414" stroke-width="1.2"/>
+</g>
+<g id="mr64">
+<circle r="13" fill="#ff9d23"/>
+<g fill="#ffbc55"><circle cx="0" cy="-11" r="5"/><circle cx="9.5" cy="-5.5" r="5"/><circle cx="9.5" cy="5.5" r="5"/><circle cx="0" cy="11" r="5"/><circle cx="-9.5" cy="5.5" r="5"/><circle cx="-9.5" cy="-5.5" r="5"/></g>
+<circle r="7.5" fill="#f97b0c"/><circle r="3" fill="#c95400"/>
+</g>
+<g id="st64">
+<rect x="-9" y="0" width="18" height="26" fill="url(#pl64)"/>
+<rect x="-12" y="0" width="24" height="6" fill="url(#gd64)"/>
+<rect x="-12" y="22" width="24" height="5" fill="url(#gd64)"/>
+</g>
+<g id="spr64">
+<path d="M0 -6 C6 -2 6 2 0 6 C-6 2 -6 -2 0 -6Z" fill="url(#lf64)"/>
+<path d="M-16 0 C-10 -6 -4 -6 0 0 C-4 6 -10 6 -16 0Z" fill="#7cc342"/>
+<path d="M16 0 C10 -6 4 -6 0 0 C4 6 10 6 16 0Z" fill="#2c6e1e"/>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="#fffcf0"/>
+<rect x="10" y="10" width="1204" height="1564" fill="none" stroke="url(#gd64)" stroke-width="5"/>
+<rect x="30" y="30" width="1164" height="1524" fill="none" stroke="#2c6e1e" stroke-width="1.8"/>
+<rect x="46" y="46" width="1132" height="1492" fill="none" stroke="url(#gd64)" stroke-width="2"/>
+<rect x="88" y="88" width="1048" height="1408" fill="none" stroke="#c9962f" stroke-width="1.1" stroke-dasharray="12 9"/>
+<g>
+<path d="M250 60 L318 24 Q612 4 906 24 L974 60 Z" fill="url(#rf64)"/>
+<path d="M318 24 Q612 4 906 24" fill="none" stroke="url(#gd64)" stroke-width="3"/>
+<path d="M250 60 L974 60" stroke="url(#gd64)" stroke-width="6" fill="none"/>
+<path d="M262 52 L962 52" stroke="#ffd98a" stroke-width="1.6" fill="none" opacity="0.8"/>
+<circle cx="612" cy="10" r="7.5" fill="url(#gd64)" stroke="#8a3f0a" stroke-width="1.4"/>
+<path d="M612 1 L618 7 L612 13 L606 7Z" fill="#c95400"/>
+<path d="M430 40 L440 50 L430 60 L420 50Z" fill="url(#gd64)"/>
+<path d="M530 34 L540 44 L530 54 L520 44Z" fill="url(#gd64)"/>
+<path d="M694 34 L704 44 L694 54 L684 44Z" fill="url(#gd64)"/>
+<path d="M794 40 L804 50 L794 60 L784 50Z" fill="url(#gd64)"/>
+<use href="#st64" x="300" y="60"/>
+<use href="#st64" x="480" y="60"/>
+<use href="#st64" x="744" y="60"/>
+<use href="#st64" x="924" y="60"/>
+</g>
+<g>
+<use href="#lf64" x="264" y="62"/><use href="#lf64" x="348" y="66"/><use href="#lf64" x="396" y="66"/><use href="#lf64" x="444" y="66"/>
+<use href="#lf64" x="516" y="66"/><use href="#lf64" x="564" y="66"/><use href="#lf64" x="612" y="68"/><use href="#lf64" x="660" y="66"/>
+<use href="#lf64" x="708" y="66"/><use href="#lf64" x="780" y="66"/><use href="#lf64" x="828" y="66"/><use href="#lf64" x="876" y="66"/>
+<use href="#lf64" x="960" y="62"/>
+<g fill="none" stroke="#c9962f" stroke-width="1.6">
+<path d="M348 56 L348 66"/><path d="M444 56 L444 66"/><path d="M564 56 L564 66"/><path d="M660 56 L660 66"/><path d="M780 56 L780 66"/><path d="M876 56 L876 66"/>
+</g>
+<use href="#mr64" transform="translate(408,66) scale(0.75)"/>
+<use href="#mr64" transform="translate(612,64) scale(0.85)"/>
+<use href="#mr64" transform="translate(816,66) scale(0.75)"/>
+<use href="#mr64" transform="translate(196,72) scale(0.62)"/>
+<use href="#mr64" transform="translate(1028,72) scale(0.62)"/>
+</g>
+<g fill="none">
+<path d="M48 130 C72 310 24 490 48 670 C72 850 24 1030 48 1210 C70 1370 36 1444 48 1474" stroke="url(#gd64)" stroke-width="3"/>
+<path d="M1176 130 C1152 310 1200 490 1176 670 C1152 850 1200 1030 1176 1210 C1154 1370 1188 1444 1176 1474" stroke="url(#gd64)" stroke-width="3"/>
+</g>
+<g>
+<use href="#lf64" transform="translate(58,330) rotate(55)"/>
+<use href="#lf64" transform="translate(58,330) rotate(105)"/>
+<use href="#lf64" transform="translate(58,700) rotate(55)"/>
+<use href="#lf64" transform="translate(58,700) rotate(105)"/>
+<use href="#lf64" transform="translate(58,1070) rotate(55)"/>
+<use href="#lf64" transform="translate(58,1070) rotate(105)"/>
+<use href="#lf64" transform="translate(1166,330) rotate(-55)"/>
+<use href="#lf64" transform="translate(1166,330) rotate(-105)"/>
+<use href="#lf64" transform="translate(1166,700) rotate(-55)"/>
+<use href="#lf64" transform="translate(1166,700) rotate(-105)"/>
+<use href="#lf64" transform="translate(1166,1070) rotate(-55)"/>
+<use href="#lf64" transform="translate(1166,1070) rotate(-105)"/>
+<use href="#mr64" transform="translate(48,516) scale(0.72)"/>
+<use href="#mr64" transform="translate(48,886) scale(0.72)"/>
+<use href="#mr64" transform="translate(1176,516) scale(0.72)"/>
+<use href="#mr64" transform="translate(1176,886) scale(0.72)"/>
+</g>
+<g>
+<rect x="14" y="1494" width="1196" height="16" fill="url(#gd64)"/>
+<rect x="14" y="1494" width="1196" height="5" fill="#f7e6b4"/>
+<rect x="34" y="1520" width="1156" height="13" fill="url(#pl64)"/>
+<rect x="60" y="1543" width="1104" height="9" fill="#8a3f0a"/>
+<g fill="url(#lf64)">
+<path d="M60 1584 C60 1560 74 1552 86 1558 C78 1576 70 1584 60 1584Z"/>
+<path d="M1164 1584 C1164 1560 1150 1552 1138 1558 C1146 1576 1154 1584 1164 1584Z"/>
+</g>
+<use href="#mr64" transform="translate(150,1566) scale(0.8)"/>
+<use href="#mr64" transform="translate(300,1566) scale(0.8)"/>
+<use href="#mr64" transform="translate(450,1566) scale(0.8)"/>
+<use href="#mr64" transform="translate(612,1566) scale(0.95)"/>
+<use href="#mr64" transform="translate(774,1566) scale(0.8)"/>
+<use href="#mr64" transform="translate(924,1566) scale(0.8)"/>
+<use href="#mr64" transform="translate(1074,1566) scale(0.8)"/>
+</g>
+<g>
+<circle cx="48" cy="48" r="36" fill="#fffcf0" stroke="url(#gd64)" stroke-width="4"/>
+<use href="#mr64" transform="translate(48,48) scale(1.05)"/>
+<circle cx="48" cy="48" r="42" fill="none" stroke="#2c6e1e" stroke-width="1.4" stroke-dasharray="5 7"/>
+<circle cx="1176" cy="48" r="36" fill="#fffcf0" stroke="url(#gd64)" stroke-width="4"/>
+<use href="#mr64" transform="translate(1176,48) scale(1.05)"/>
+<circle cx="1176" cy="48" r="42" fill="none" stroke="#2c6e1e" stroke-width="1.4" stroke-dasharray="5 7"/>
+<circle cx="48" cy="1536" r="36" fill="#fffcf0" stroke="url(#gd64)" stroke-width="4"/>
+<use href="#mr64" transform="translate(48,1536) scale(1.05)"/>
+<circle cx="48" cy="1536" r="42" fill="none" stroke="#2c6e1e" stroke-width="1.4" stroke-dasharray="5 7"/>
+<circle cx="1176" cy="1536" r="36" fill="#fffcf0" stroke="url(#gd64)" stroke-width="4"/>
+<use href="#mr64" transform="translate(1176,1536) scale(1.05)"/>
+<circle cx="1176" cy="1536" r="42" fill="none" stroke="#2c6e1e" stroke-width="1.4" stroke-dasharray="5 7"/>
+</g>
+<g fill="#c9962f">
+<circle cx="30" cy="440" r="3.4"/><circle cx="30" cy="600" r="3.4"/><circle cx="30" cy="1160" r="3.4"/><circle cx="30" cy="1320" r="3.4"/>
+<circle cx="1194" cy="440" r="3.4"/><circle cx="1194" cy="600" r="3.4"/><circle cx="1194" cy="1160" r="3.4"/><circle cx="1194" cy="1320" r="3.4"/>
+<circle cx="470" cy="30" r="3.4"/><circle cx="754" cy="30" r="3.4"/>
+</g>
+<g opacity="0.05" transform="translate(612,760) scale(7)">
+<path d="M-46 20 L-34 -8 Q0 -34 34 -8 L46 20 Z" fill="none" stroke="#8a3f0a" stroke-width="2.2"/>
+<rect x="-40" y="20" width="80" height="10" fill="none" stroke="#2c6e1e" stroke-width="2"/>
+</g>
+<rect width="1224" height="1584" filter="url(#gr64)"/>
+</svg>

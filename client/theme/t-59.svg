@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="bg59" x1="0" y1="0" x2="0.6" y2="1">
+<stop offset="0" stop-color="#fefaf2"/>
+<stop offset="0.5" stop-color="#faf3e5"/>
+<stop offset="1" stop-color="#f3e9d5"/>
+</linearGradient>
+<linearGradient id="wl59" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#6f4a2c"/>
+<stop offset="0.5" stop-color="#5a3a22"/>
+<stop offset="1" stop-color="#432b17"/>
+</linearGradient>
+<linearGradient id="gd59" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#f4de95"/>
+<stop offset="0.4" stop-color="#d4a531"/>
+<stop offset="0.75" stop-color="#a87b22"/>
+<stop offset="1" stop-color="#e8c76a"/>
+</linearGradient>
+<linearGradient id="cr59" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#bd2c41"/>
+<stop offset="1" stop-color="#8c1526"/>
+</linearGradient>
+<radialGradient id="gl59" cx="0.5" cy="0.5" r="0.55">
+<stop offset="0" stop-color="#ffe6a6" stop-opacity="0.5"/>
+<stop offset="1" stop-color="#ffe6a6" stop-opacity="0"/>
+</radialGradient>
+<filter id="bl59" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+<filter id="gr59"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<pattern id="tw59" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<path d="M0,0 V6" stroke="#e9c97a" stroke-width="1.7" opacity="0.5"/>
+</pattern>
+<pattern id="kg59" width="16" height="16" patternUnits="userSpaceOnUse">
+<path d="M0,0 H16 M0,0 V16" stroke="#d4a531" stroke-width="0.5" opacity="0.3"/>
+</pattern>
+<pattern id="zz59" width="26" height="10" patternUnits="userSpaceOnUse">
+<path d="M0,8 L13,2 L26,8" fill="none" stroke="#d4a531" stroke-width="1.5"/>
+</pattern>
+<g id="ps59">
+<path d="M34,76 C16,70 6,52 8,34 C10,14 28,2 46,6 C60,9 70,22 68,36 C66,50 54,58 44,54 C37,51 36,43 42,40 C46,38 50,41 50,45 C50,49 46,51 43,49 C50,56 46,66 34,76 Z" fill="url(#cr59)"/>
+<path d="M34,76 C16,70 6,52 8,34 C10,14 28,2 46,6 C60,9 70,22 68,36 C66,50 54,58 44,54 C37,51 36,43 42,40 C46,38 50,41 50,45 C50,49 46,51 43,49 C50,56 46,66 34,76 Z" fill="url(#tw59)"/>
+<path d="M34,76 C16,70 6,52 8,34 C10,14 28,2 46,6 C60,9 70,22 68,36 C66,50 54,58 44,54 C37,51 36,43 42,40 C46,38 50,41 50,45 C50,49 46,51 43,49 C50,56 46,66 34,76 Z" fill="none" stroke="#d4a531" stroke-width="2.2"/>
+<path d="M34,70 C20,62 14,46 18,32 C22,16 38,8 52,14 C62,19 66,32 61,42 C57,50 47,53 41,48" fill="none" stroke="#e9c97a" stroke-width="2"/>
+<path d="M32,64 C24,56 22,42 27,32 C32,22 44,17 53,22" fill="none" stroke="#d4a531" stroke-width="1.4"/>
+<path d="M31,58 C28,48 30,39 35,32" fill="none" stroke="#f0d98c" stroke-width="1.2"/>
+<circle cx="30" cy="46" r="4" fill="#d4a531"/>
+<circle cx="30" cy="46" r="1.8" fill="#4a2f1a"/>
+<g fill="#f0d98c">
+<circle cx="14" cy="52" r="1.6"/>
+<circle cx="12" cy="38" r="1.6"/>
+<circle cx="17" cy="24" r="1.6"/>
+<circle cx="28" cy="12" r="1.6"/>
+<circle cx="42" cy="7" r="1.6"/>
+<circle cx="56" cy="12" r="1.6"/>
+<circle cx="65" cy="24" r="1.6"/>
+</g>
+</g>
+<pattern id="pk59" width="129" height="96" patternUnits="userSpaceOnUse" patternTransform="translate(96 0)">
+<use href="#ps59" transform="translate(16 16) scale(0.78)"/>
+<path d="M100,24 L114,38 L114,44 L120,48 L114,52 L114,58 L100,72 L86,58 L86,52 L80,48 L86,44 L86,38 Z" fill="url(#cr59)" stroke="url(#gd59)" stroke-width="1.8"/>
+<path d="M100,34 L108,48 L100,62 L92,48 Z" fill="url(#gd59)"/>
+<circle cx="100" cy="48" r="3" fill="#4a2f1a"/>
+<g fill="#d4a531">
+<circle cx="76" cy="24" r="1.8"/>
+<circle cx="76" cy="72" r="1.8"/>
+<circle cx="124" cy="24" r="1.8"/>
+<circle cx="124" cy="72" r="1.8"/>
+</g>
+</pattern>
+<pattern id="sv59" width="96" height="116" patternUnits="userSpaceOnUse" patternTransform="translate(0 96)">
+<path d="M48,0 C64,14 64,30 48,44 C32,58 32,74 48,88 C60,99 62,108 48,116" fill="none" stroke="#d4a531" stroke-width="2.5"/>
+<use href="#ps59" transform="translate(54 22) scale(0.36) rotate(28)"/>
+<use href="#ps59" transform="translate(42 66) scale(0.36) rotate(208)"/>
+<g fill="#e9c97a">
+<circle cx="30" cy="16" r="2.6"/>
+<circle cx="66" cy="52" r="2.6"/>
+<circle cx="30" cy="100" r="2.6"/>
+</g>
+<path d="M6,0 V116 M90,0 V116" stroke="#a87b22" stroke-width="2"/>
+<path d="M11,0 V116 M85,0 V116" stroke="#e9c97a" stroke-width="0.9" stroke-dasharray="5 5"/>
+</pattern>
+<g id="bn59">
+<rect x="96" y="0" width="1032" height="96" fill="url(#wl59)"/>
+<rect x="96" y="0" width="1032" height="96" fill="url(#kg59)"/>
+<rect x="96" y="0" width="1032" height="96" fill="url(#pk59)"/>
+<path d="M96,5 H1128 M96,91 H1128" stroke="url(#gd59)" stroke-width="2.4"/>
+<path d="M96,9 H1128 M96,87 H1128" stroke="#e9c97a" stroke-width="1" stroke-dasharray="5 4"/>
+<path d="M96,16 H1128 M96,80 H1128" stroke="#a31f34" stroke-width="1.8"/>
+<rect x="96" y="19" width="1032" height="10" fill="url(#zz59)"/>
+<rect x="96" y="67" width="1032" height="10" fill="url(#zz59)" transform="rotate(180 612 72)"/>
+</g>
+<g id="k59">
+<path d="M2,2 H94 V17 C60,21 34,47 30,78 C29,86 31,91 35,94 H2 Z" fill="url(#wl59)"/>
+<path d="M2,2 H94 V17 C60,21 34,47 30,78 C29,86 31,91 35,94 H2 Z" fill="url(#kg59)"/>
+<path d="M10,10 H86 C56,15 34,42 30,72 C29,79 31,85 35,88 H10 Z" fill="none" stroke="#d4a531" stroke-width="2" stroke-dasharray="6 5"/>
+<circle cx="44" cy="44" r="42" fill="url(#gl59)"/>
+<use href="#ps59" transform="translate(12 8) scale(1.12)"/>
+<path d="M6,50 C10,34 22,22 40,16" fill="none" stroke="#d4a531" stroke-width="1.6" opacity="0.85"/>
+<path d="M50,6 C56,14 60,26 58,38" fill="none" stroke="#e9c97a" stroke-width="1.4" opacity="0.85"/>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="url(#bg59)"/>
+<path fill-rule="evenodd" fill="#f6efe0" opacity="0.85" d="M0,0 H1224 V1584 H0 Z M96,96 H1128 V1488 H96 Z"/>
+<use href="#bn59"/>
+<use href="#bn59" transform="rotate(180 612 1536)"/>
+<rect x="0" y="96" width="96" height="1392" fill="url(#wl59)"/>
+<rect x="0" y="96" width="96" height="1392" fill="url(#kg59)"/>
+<rect x="0" y="96" width="96" height="1392" fill="url(#sv59)"/>
+<rect x="1128" y="96" width="96" height="1392" fill="url(#wl59)"/>
+<rect x="1128" y="96" width="96" height="1392" fill="url(#kg59)"/>
+<rect x="1128" y="96" width="96" height="1392" fill="url(#sv59)"/>
+<use href="#k59"/>
+<use href="#k59" transform="translate(1224 0) scale(-1 1)"/>
+<use href="#k59" transform="translate(0 1584) scale(1 -1)"/>
+<use href="#k59" transform="translate(1224 1584) scale(-1 -1)"/>
+<rect x="7" y="7" width="1210" height="1570" fill="none" stroke="url(#wl59)" stroke-width="11"/>
+<rect x="7" y="7" width="1210" height="1570" fill="none" stroke="#ffe6a6" stroke-width="2" opacity="0.4" filter="url(#bl59)"/>
+<rect x="26" y="26" width="1172" height="1532" fill="none" stroke="url(#gd59)" stroke-width="3.5"/>
+<rect x="37" y="37" width="1150" height="1510" fill="none" stroke="#8c1526" stroke-width="1.6" stroke-dasharray="10 7"/>
+<rect x="87" y="87" width="1050" height="1410" fill="none" stroke="url(#wl59)" stroke-width="2.5"/>
+<rect x="93" y="93" width="1038" height="1398" fill="none" stroke="url(#gd59)" stroke-width="1.2"/>
+<use href="#ps59" transform="translate(470 980) scale(3.4)" opacity="0.05"/>
+<use href="#ps59" transform="translate(700 1130) scale(1.8)" opacity="0.05"/>
+<rect width="1224" height="1584" filter="url(#gr59)" opacity="0.05"/>
+</svg>

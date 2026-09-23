@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="g21" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#f3d28e"/>
+<stop offset="0.5" stop-color="#c79a3a"/>
+<stop offset="1" stop-color="#f3d28e"/>
+</linearGradient>
+<linearGradient id="g21v" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#f3d28e"/>
+<stop offset="1" stop-color="#c79a3a"/>
+</linearGradient>
+<g id="curl21">
+<path d="M0 0 C14 -2 26 -12 28 -26 C29 -36 22 -42 15 -40 C8 -38 6 -30 12 -26 C17 -23 24 -26 24 -33" fill="none" stroke="url(#g21)" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M0 0 C-2 14 -12 26 -26 28 C-36 29 -42 22 -40 15 C-38 8 -30 6 -26 12 C-23 17 -26 24 -33 24" fill="none" stroke="#5f1533" stroke-width="1.8" stroke-linecap="round"/>
+<circle r="3" fill="#c79a3a"/>
+</g>
+<g id="diam21">
+<path d="M0 -7 L7 0 L0 7 L-7 0Z" fill="url(#g21)" stroke="#5f1533" stroke-width="1"/>
+</g>
+<g id="lot21">
+<path d="M0 10 C-9 4 -11 -6 0 -12 C11 -6 9 4 0 10Z" fill="#5f1533"/>
+<path d="M0 8 C-5 3 -6 -4 0 -8 C6 -4 5 3 0 8Z" fill="url(#g21)"/>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="#fffdf7"/>
+<rect x="8" y="8" width="1208" height="1568" fill="none" stroke="url(#g21)" stroke-width="6"/>
+<rect x="24" y="24" width="1176" height="1536" fill="none" stroke="#5f1533" stroke-width="2"/>
+<rect x="44" y="44" width="1136" height="1496" fill="none" stroke="url(#g21)" stroke-width="3"/>
+<rect x="76" y="76" width="1072" height="1432" fill="none" stroke="#c79a3a" stroke-width="1.6"/>
+<rect x="86" y="86" width="1052" height="1412" fill="none" stroke="#5f1533" stroke-width="1" opacity="0.55"/>
+<path d="M96 96 C300 66 450 40 612 40 C774 40 924 66 1128 96" fill="none" stroke="url(#g21v)" stroke-width="5"/>
+<path d="M96 84 C300 54 450 30 612 30 C774 30 924 54 1128 84" fill="none" stroke="#5f1533" stroke-width="1.6"/>
+<path d="M110 70 C310 44 460 22 612 22 C764 22 914 44 1114 70" fill="none" stroke="#c79a3a" stroke-width="1.2" opacity="0.8"/>
+<path d="M560 40 L612 16 L664 40 L612 64Z" fill="url(#g21)" stroke="#5f1533" stroke-width="1.6"/>
+<path d="M612 24 L632 40 L612 56 L592 40Z" fill="#5f1533"/>
+<circle cx="612" cy="40" r="4" fill="#f3d28e"/>
+<path d="M470 56 C478 44 494 44 502 56 C494 68 478 68 470 56Z" fill="#5f1533" opacity="0.9"/>
+<path d="M722 56 C730 44 746 44 754 56 C746 68 730 68 722 56Z" fill="#5f1533" opacity="0.9"/>
+<path d="M300 64 C306 55 318 55 324 64 C318 73 306 73 300 64Z" fill="url(#g21)"/>
+<path d="M900 64 C906 55 918 55 924 64 C918 73 906 73 900 64Z" fill="url(#g21)"/>
+<path d="M96 1488 C300 1518 450 1544 612 1544 C774 1544 924 1518 1128 1488" fill="none" stroke="url(#g21v)" stroke-width="5"/>
+<path d="M96 1500 C300 1530 450 1554 612 1554 C774 1554 924 1530 1128 1500" fill="none" stroke="#5f1533" stroke-width="1.6"/>
+<path d="M560 1544 L612 1568 L664 1544 L612 1520Z" fill="url(#g21)" stroke="#5f1533" stroke-width="1.6"/>
+<path d="M612 1560 L632 1544 L612 1528 L592 1544Z" fill="#5f1533"/>
+<path d="M96 512 C70 560 70 640 96 688" fill="none" stroke="url(#g21)" stroke-width="4"/>
+<path d="M1128 512 C1154 560 1154 640 1128 688" fill="none" stroke="url(#g21)" stroke-width="4"/>
+<path d="M96 896 C70 944 70 1024 96 1072" fill="none" stroke="url(#g21)" stroke-width="4"/>
+<path d="M1128 896 C1154 944 1154 1024 1128 1072" fill="none" stroke="url(#g21)" stroke-width="4"/>
+<use href="#curl21" x="48" y="48"/>
+<use href="#curl21" x="1176" y="48" transform="scale(-1,1) translate(-2352,0)"/>
+<use href="#curl21" x="48" y="1536" transform="scale(1,-1) translate(0,-3072)"/>
+<use href="#curl21" x="1176" y="1536" transform="scale(-1,-1) translate(-2352,-3072)"/>
+<circle cx="48" cy="48" r="12" fill="none" stroke="url(#g21)" stroke-width="3"/>
+<circle cx="1176" cy="48" r="12" fill="none" stroke="url(#g21)" stroke-width="3"/>
+<circle cx="48" cy="1536" r="12" fill="none" stroke="url(#g21)" stroke-width="3"/>
+<circle cx="1176" cy="1536" r="12" fill="none" stroke="url(#g21)" stroke-width="3"/>
+<circle cx="48" cy="48" r="5" fill="#5f1533"/>
+<circle cx="1176" cy="48" r="5" fill="#5f1533"/>
+<circle cx="48" cy="1536" r="5" fill="#5f1533"/>
+<circle cx="1176" cy="1536" r="5" fill="#5f1533"/>
+<use href="#diam21" x="48" y="180"/>
+<use href="#diam21" x="48" y="300"/>
+<use href="#diam21" x="48" y="420"/>
+<use href="#diam21" x="48" y="792"/>
+<use href="#diam21" x="48" y="1164"/>
+<use href="#diam21" x="48" y="1284"/>
+<use href="#diam21" x="48" y="1404"/>
+<use href="#diam21" x="1176" y="180"/>
+<use href="#diam21" x="1176" y="300"/>
+<use href="#diam21" x="1176" y="420"/>
+<use href="#diam21" x="1176" y="792"/>
+<use href="#diam21" x="1176" y="1164"/>
+<use href="#diam21" x="1176" y="1284"/>
+<use href="#diam21" x="1176" y="1404"/>
+<use href="#diam21" x="180" y="48"/>
+<use href="#diam21" x="330" y="48"/>
+<use href="#diam21" x="894" y="48"/>
+<use href="#diam21" x="1044" y="48"/>
+<use href="#diam21" x="180" y="1536"/>
+<use href="#diam21" x="330" y="1536"/>
+<use href="#diam21" x="894" y="1536"/>
+<use href="#diam21" x="1044" y="1536"/>
+<use href="#lot21" x="48" y="560"/>
+<use href="#lot21" x="48" y="1024"/>
+<use href="#lot21" x="1176" y="560" transform="rotate(180 1176 560)"/>
+<use href="#lot21" x="1176" y="1024" transform="rotate(180 1176 1024)"/>
+<use href="#lot21" x="470" y="48" transform="rotate(-90 470 48)"/>
+<use href="#lot21" x="754" y="48" transform="rotate(90 754 48)"/>
+<use href="#lot21" x="470" y="1536" transform="rotate(-90 470 1536)"/>
+<use href="#lot21" x="754" y="1536" transform="rotate(90 754 1536)"/>
+<g fill="#5f1533" opacity="0.85">
+<circle cx="48" cy="640" r="4"/><circle cx="48" cy="944" r="4"/>
+<circle cx="1176" cy="640" r="4"/><circle cx="1176" cy="944" r="4"/>
+<circle cx="612" cy="48" r="4"/><circle cx="612" cy="1536" r="4"/>
+<circle cx="240" cy="48" r="3"/><circle cx="984" cy="48" r="3"/>
+<circle cx="240" cy="1536" r="3"/><circle cx="984" cy="1536" r="3"/>
+</g>
+</svg>

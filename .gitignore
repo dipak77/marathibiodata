@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment secrets
+.env
+.env.*
+
+# IDE / editor
+.vs/
+.vscode/
+*.suo
+*.user
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore.rules
+firestore.indexes.json
+
+# Logs & OS
+*.log
+npm-debug.log*
+Thumbs.db
+.DS_Store
+
+# Scratch / backups
+scratch/
+index.old.html
+*.bak
+*.old

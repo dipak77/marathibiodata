@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="gb118" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#1d5b3c"/>
+<stop offset="0.5" stop-color="#d3a63c"/>
+<stop offset="1" stop-color="#b5272e"/>
+</linearGradient>
+<filter id="gr118" x="0%" y="0%" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.87" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="saturate" values="0"/>
+</filter>
+<g id="pad118">
+<circle r="15" fill="#2e7a52" stroke="#14472f" stroke-width="1.4"/>
+<path d="M0 0 L14 -5 A15 15 0 0 1 14 5 Z" fill="#eef1e2"/>
+<circle r="4" fill="#1d5b3c"/>
+</g>
+<g id="bud118">
+<path d="M0 -14 C7 -7 7 6 0 13 C-7 6 -7 -7 0 -14 Z" fill="#b5272e" stroke="#d3a63c" stroke-width="1.4"/>
+<path d="M0 -8 C4 -4 4 4 0 8" fill="none" stroke="#eef1e2" stroke-width="1.2"/>
+<path d="M0 13 C-4 18 -3 22 0 24 C3 22 4 18 0 13 Z" fill="#1d5b3c" stroke="#14472f" stroke-width="1"/>
+</g>
+<g id="los118">
+<path d="M0 -16 C8 -8 8 6 0 14 C-8 6 -8 -8 0 -16 Z" fill="#b5272e" stroke="#d3a63c" stroke-width="1.3"/>
+<path d="M0 -16 C8 -8 8 6 0 14 C-8 6 -8 -8 0 -16 Z" fill="#d3a63c" stroke="#14472f" stroke-width="1.1" transform="rotate(-45)"/>
+<path d="M0 -16 C8 -8 8 6 0 14 C-8 6 -8 -8 0 -16 Z" fill="#d3a63c" stroke="#14472f" stroke-width="1.1" transform="rotate(45)"/>
+<path d="M0 -16 C8 -8 8 6 0 14 C-8 6 -8 -8 0 -16 Z" fill="#b5272e" stroke="#d3a63c" stroke-width="1.1" transform="rotate(-90)"/>
+<path d="M0 -16 C8 -8 8 6 0 14 C-8 6 -8 -8 0 -16 Z" fill="#b5272e" stroke="#d3a63c" stroke-width="1.1" transform="rotate(90)"/>
+<circle r="5" fill="#d3a63c" stroke="#14472f" stroke-width="1.2"/>
+<circle r="2" fill="#b5272e"/>
+</g>
+<pattern id="ph118" width="96" height="96" patternUnits="userSpaceOnUse" patternTransform="translate(96 0)">
+<rect width="96" height="96" fill="#eef1e2"/>
+<path d="M0 18 C24 12 48 24 96 17" fill="none" stroke="#1d5b3c" stroke-width="1.7"/>
+<path d="M0 78 C24 72 48 84 96 77" fill="none" stroke="#1d5b3c" stroke-width="1.7" opacity="0.85"/>
+<path d="M0 84 C24 79 48 90 96 83" fill="none" stroke="#1d5b3c" stroke-width="1" opacity="0.6"/>
+<use href="#pad118" x="26" y="48"/>
+<use href="#los118" transform="translate(70 44) scale(0.9)"/>
+<use href="#bud118" x="48" y="66"/>
+<circle cx="10" cy="30" r="2.4" fill="#d3a63c"/>
+<circle cx="86" cy="66" r="2.4" fill="#d3a63c"/>
+<circle cx="52" cy="30" r="1.8" fill="#b5272e"/>
+</pattern>
+<pattern id="pv118" width="96" height="96" patternUnits="userSpaceOnUse" patternTransform="translate(0 96)">
+<rect width="96" height="96" fill="#eef1e2"/>
+<path d="M18 0 C12 24 24 48 17 96" fill="none" stroke="#1d5b3c" stroke-width="1.7"/>
+<path d="M78 0 C72 24 84 48 77 96" fill="none" stroke="#1d5b3c" stroke-width="1.7" opacity="0.85"/>
+<path d="M84 0 C79 24 90 48 83 96" fill="none" stroke="#1d5b3c" stroke-width="1" opacity="0.6"/>
+<use href="#pad118" x="48" y="26"/>
+<use href="#los118" x="44" y="72" transform="scale(0.9)"/>
+<use href="#bud118" transform="translate(66 48) rotate(90)"/>
+<circle cx="30" cy="10" r="2.4" fill="#d3a63c"/>
+<circle cx="66" cy="86" r="2.4" fill="#d3a63c"/>
+<circle cx="30" cy="52" r="1.8" fill="#b5272e"/>
+</pattern>
+<g id="sun118">
+<circle r="44" fill="none" stroke="#d3a63c" stroke-width="11" stroke-dasharray="7 9" opacity="0.95"/>
+<circle r="34" fill="#f6f1e0" stroke="#b5272e" stroke-width="2.2"/>
+<circle r="26" fill="none" stroke="#1d5b3c" stroke-width="1.6"/>
+<circle r="15" fill="#d3a63c"/>
+<circle r="6" fill="#b5272e"/>
+<path d="M0 -52 C4 -48 4 -44 0 -40 C-4 -44 -4 -48 0 -52 Z" fill="#b5272e"/>
+<path d="M0 -52 C4 -48 4 -44 0 -40 C-4 -44 -4 -48 0 -52 Z" fill="#1d5b3c" transform="rotate(90)"/>
+<path d="M0 -52 C4 -48 4 -44 0 -40 C-4 -44 -4 -48 0 -52 Z" fill="#b5272e" transform="rotate(180)"/>
+<path d="M0 -52 C4 -48 4 -44 0 -40 C-4 -44 -4 -48 0 -52 Z" fill="#1d5b3c" transform="rotate(270)"/>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="#f3efdf"/>
+<rect width="1224" height="1584" filter="url(#gr118)" opacity="0.05"/>
+<path fill-rule="evenodd" fill="url(#gb118)" opacity="0.10" d="M0 0H1224V1584H0Z M96 96H1128V1488H96Z"/>
+<rect x="6" y="6" width="1212" height="1572" fill="none" stroke="url(#gb118)" stroke-width="3.4"/>
+<rect x="15" y="15" width="1194" height="1554" fill="none" stroke="#d3a63c" stroke-width="1.6"/>
+<rect x="88" y="88" width="1048" height="1408" fill="none" stroke="#1d5b3c" stroke-width="1.4"/>
+<rect x="92" y="92" width="1040" height="1400" fill="none" stroke="#b5272e" stroke-width="0.9" opacity="0.65"/>
+<rect x="96" y="0" width="1032" height="96" fill="url(#ph118)"/>
+<rect x="96" y="1488" width="1032" height="96" fill="url(#ph118)" transform="rotate(180 612 1536)"/>
+<rect x="0" y="96" width="96" height="1392" fill="url(#pv118)"/>
+<rect x="1128" y="96" width="96" height="1392" fill="url(#pv118)" transform="rotate(180 1176 792)"/>
+<rect x="96" y="96" width="1032" height="1392" fill="none" stroke="#1d5b3c" stroke-width="1.6"/>
+<rect x="101" y="101" width="1022" height="1382" fill="none" stroke="#d3a63c" stroke-width="1" opacity="0.8"/>
+<use href="#sun118" x="48" y="48"/>
+<use href="#sun118" x="1176" y="48"/>
+<use href="#sun118" x="48" y="1536"/>
+<use href="#sun118" x="1176" y="1536"/>
+<g opacity="0.055">
+<use href="#sun118" transform="translate(612 792) scale(3.4)"/>
+</g>
+<g opacity="0.05" fill="none" stroke="#1d5b3c" stroke-width="6">
+<path d="M160 1280 C300 1250 420 1310 560 1280 C700 1250 820 1310 1064 1280"/>
+<path d="M160 1330 C300 1300 420 1360 560 1330 C700 1300 820 1360 1064 1330"/>
+</g>
+</svg>

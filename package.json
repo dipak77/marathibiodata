@@ -1,33 +1,36 @@
 {
-  "name": "your-awesome-website-basic-website-template-node",
-  "version": "1.0.0",
-  "description": "YOUR PROJECT DESCRIPTION GOES HERE",
+  "name": "shubhbiodata",
+  "version": "2.0.0",
+  "description": "ShubhBiodata — premium Marathi/Hindi/English marriage biodata studio with live canvas preview, 30+ themes and HD exports.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amyhua/basic-website-template-node.git"
+    "url": "git+https://github.com/dipak77/marathibiodata.git"
   },
   "keywords": [
-    "Girls",
-    "Who",
-    "Code",
-    "website",
-    "template",
-    "node"
+    "biodata",
+    "marathi",
+    "wedding",
+    "express",
+    "canvas"
   ],
-  "author": "YOUR NAME GOES HERE",
+  "author": "ShubhBiodata",
+  "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/amyhua/basic-website-template-node/issues"
+    "url": "https://github.com/dipak77/marathibiodata/issues"
   },
-  "homepage": "https://github.com/amyhua/basic-website-template-node#readme",
+  "homepage": "https://github.com/dipak77/marathibiodata#readme",
   "dependencies": {
-    "canvas": "^2.11.2",
-    "express": "^4.14.0",
-    "http": "0.0.0",
-    "nodemon": "^1.11.0"
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="bg55" x1="0" y1="0" x2="0.7" y2="1">
+<stop offset="0" stop-color="#fffdf8"/>
+<stop offset="0.5" stop-color="#fdf7ee"/>
+<stop offset="1" stop-color="#fbeedc"/>
+</linearGradient>
+<linearGradient id="pk55" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#ff4f92"/>
+<stop offset="0.5" stop-color="#d62b6f"/>
+<stop offset="1" stop-color="#b21856"/>
+</linearGradient>
+<linearGradient id="or55" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#ffa03c"/>
+<stop offset="1" stop-color="#f2701a"/>
+</linearGradient>
+<linearGradient id="yl55" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#ffe066"/>
+<stop offset="1" stop-color="#f7b917"/>
+</linearGradient>
+<radialGradient id="gl55" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#ffe9f2" stop-opacity="0.85"/>
+<stop offset="1" stop-color="#ffe9f2" stop-opacity="0"/>
+</radialGradient>
+<filter id="bl55" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+<filter id="gr55"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<pattern id="dsh55" width="15" height="13" patternUnits="userSpaceOnUse">
+<path d="M2,11 L7.5,3 M9.5,11 L15,3" stroke="#fff6e4" stroke-width="1.9" stroke-linecap="round" opacity="0.6"/>
+</pattern>
+<pattern id="dsb55" width="15" height="13" patternUnits="userSpaceOnUse">
+<path d="M2,11 L7.5,3 M9.5,11 L15,3" stroke="#7a0b3c" stroke-width="1.9" stroke-linecap="round" opacity="0.55"/>
+</pattern>
+<pattern id="tp55" width="129" height="96" patternUnits="userSpaceOnUse" patternTransform="translate(96 0)">
+<rect width="129" height="96" fill="url(#pk55)"/>
+<path d="M0,0 L32.25,96 L64.5,0 Z" fill="url(#or55)"/>
+<path d="M64.5,0 L96.75,96 L129,0 Z" fill="url(#or55)"/>
+<path d="M0,96 L32.25,0 L64.5,96 Z" fill="url(#yl55)"/>
+<path d="M64.5,96 L96.75,0 L129,96 Z" fill="url(#yl55)"/>
+<path d="M0,0 L32.25,96 L64.5,0 L96.75,96 L129,0" fill="none" stroke="#8f0f48" stroke-width="2.2"/>
+<path d="M0,96 L32.25,0 L64.5,96 L96.75,0 L129,96" fill="none" stroke="#8f0f48" stroke-width="2.2"/>
+<rect width="129" height="96" fill="url(#dsh55)"/>
+<rect x="0" y="0" width="129" height="9" fill="#8f0f48"/>
+<rect x="0" y="87" width="129" height="9" fill="#8f0f48"/>
+<path d="M0,4.5 H129 M0,91.5 H129" stroke="#ffe066" stroke-width="2.4" stroke-dasharray="7 6"/>
+</pattern>
+<pattern id="sd55" width="96" height="116" patternUnits="userSpaceOnUse" patternTransform="translate(0 96)">
+<rect width="96" height="116" fill="url(#pk55)"/>
+<path d="M6,4 L54,33 L6,62 Z" fill="url(#or55)"/>
+<path d="M6,62 L54,91 L6,120 Z" fill="url(#yl55)"/>
+<path d="M54,33 L6,62 L54,91 L6,120" fill="none" stroke="#8f0f48" stroke-width="2.2"/>
+<rect width="96" height="116" fill="url(#dsh55)"/>
+<rect x="0" y="0" width="7" height="116" fill="#8f0f48"/>
+<rect x="87" y="0" width="9" height="116" fill="#8f0f48"/>
+<path d="M3.5,0 V116 M91.5,0 V116" stroke="#ffe066" stroke-width="2.2" stroke-dasharray="7 6"/>
+</pattern>
+<g id="k55">
+<path d="M2,2 H94 V20 C62,24 40,46 36,76 C34,86 36,91 41,94 H2 Z" fill="#8f0f48"/>
+<path d="M40,6 L76,40 L40,74 L4,40 Z" fill="url(#or55)" stroke="#fff6e4" stroke-width="2.4"/>
+<path d="M40,17 L65,40 L40,63 L15,40 Z" fill="url(#yl55)" stroke="#8f0f48" stroke-width="2"/>
+<path d="M40,27 L55,40 L40,53 L25,40 Z" fill="url(#pk55)" stroke="#fff6e4" stroke-width="2"/>
+<path d="M40,34 L46,40 L40,46 L34,40 Z" fill="#8f0f48"/>
+<g stroke="#fff6e4" stroke-width="1.6" stroke-linecap="round" opacity="0.85">
+<path d="M40,8 L40,72 M8,40 L72,40"/>
+<path d="M16,24 L64,56 M64,24 L16,56"/>
+</g>
+<rect x="0" y="0" width="96" height="96" fill="url(#dsh55)" opacity="0.7"/>
+<circle cx="40" cy="40" r="4" fill="#fff6e4"/>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="url(#bg55)"/>
+<path fill-rule="evenodd" fill="#fdf3e4" opacity="0.85" d="M0,0 H1224 V1584 H0 Z M96,96 H1128 V1488 H96 Z"/>
+<rect x="96" y="0" width="1032" height="96" fill="url(#tp55)"/>
+<rect x="96" y="1488" width="1032" height="96" fill="url(#tp55)" transform="rotate(180 612 1536)"/>
+<rect x="0" y="96" width="96" height="1392" fill="url(#sd55)"/>
+<rect x="1128" y="96" width="96" height="1392" fill="url(#sd55)" transform="rotate(180 1176 792)"/>
+<use href="#k55"/>
+<use href="#k55" transform="translate(1224 0) scale(-1 1)"/>
+<use href="#k55" transform="translate(0 1584) scale(1 -1)"/>
+<use href="#k55" transform="translate(1224 1584) scale(-1 -1)"/>
+<rect x="8" y="8" width="1208" height="1568" fill="none" stroke="#8f0f48" stroke-width="11"/>
+<rect x="8" y="8" width="1208" height="1568" fill="none" stroke="#ffd9ea" stroke-width="2" opacity="0.45" filter="url(#bl55)"/>
+<rect x="27" y="27" width="1170" height="1530" fill="none" stroke="url(#yl55)" stroke-width="3.5"/>
+<rect x="38" y="38" width="1148" height="1508" fill="none" stroke="#8f0f48" stroke-width="1.6" stroke-dasharray="9 6"/>
+<rect x="87" y="87" width="1050" height="1410" fill="none" stroke="url(#pk55)" stroke-width="2.5"/>
+<rect x="92" y="92" width="1040" height="1400" fill="none" stroke="#8f0f48" stroke-width="1" stroke-dasharray="12 8"/>
+<g opacity="0.06" stroke-width="6" fill="none">
+<path d="M612,960 L852,1200 L612,1440 L372,1200 Z" stroke="#d62b6f"/>
+<path d="M612,1010 L802,1200 L612,1390 L422,1200 Z" stroke="#f2701a"/>
+<path d="M612,1060 L752,1200 L612,1340 L472,1200 Z" stroke="#f7b917"/>
+<path d="M612,1110 L702,1200 L612,1290 L522,1200 Z" stroke="#8f0f48"/>
+</g>
+<rect width="1224" height="1584" filter="url(#gr55)" opacity="0.05"/>
+</svg>

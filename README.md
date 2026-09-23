@@ -1,6 +1,6 @@
 # ✨ ShubhBiodata — Premium Marathi Marriage Biodata Studio
 
-A complete redesign of the classic RDeditor Marathi biodata maker into a **premium, mobile-first single-page studio** for creating wedding biodatas in **Marathi, Hindi and English** — with live preview, 20 designer themes, HD downloads and a freemium business model.
+A premium, mobile-first single-page studio for creating wedding biodatas in **Marathi, Hindi and English** — with live canvas preview, **177 designer themes**, HD downloads and a freemium business model.
 
 ![Hero](client/assets/img/hero-biodata.jpg)
 
@@ -10,60 +10,85 @@ A complete redesign of the classic RDeditor Marathi biodata maker into a **premi
 
 ```bash
 npm install
-node server.js        # → http://localhost:3000
+npm start          # → http://localhost:3000
+# or with auto-reload:
+npm run dev
 ```
 
 Serves `client/index.html` (landing) and `client/builder.html` (studio) statically via Express on `0.0.0.0:3000`.
 
+Optional environment variables (server):
+
+```bash
+PORT=3000
+PREMIUM_SECRET=<random-secret>     # HMAC secret for /api/premium/verify tokens
+PAYTM_MID=...                      # only if wiring legacy Paytm flow
+PAYTM_KEY=...
+PAYTM_WEBSITE=WEBSTAGING
+```
+
+> ⚠️ **Rotate the Paytm key that was previously committed to git history** and never commit secrets again (`.gitignore` now covers `.env`).
+
 ---
 
-## 💎 What's new (redesign)
+## 💎 Features
 
 ### Experience & flow
-- **Premium landing page** — hero with generated brand art, animated stats, 3-step flow, filterable template gallery (20 themes, Free/Pro), feature grid, multilingual band, pricing, testimonial slider, FAQ accordion, CTA band and rich footer.
-- **Guided 5-step builder wizard** — Theme → Personal → Family → Photo & Contact → Download, with prev/next, free step-jumping and a mobile "Form / Preview" split view.
-- **Live preview** — every keystroke re-renders the real biodata canvas, no guessing.
-- **Auto-save drafts** (localStorage) with "resume where you left" banner on landing.
-- **Trilingual UI + biodata** (मराठी / हिंदी / English) — labels, dates (१५ जून १९९८), numerals (५'८"), section names all adapt automatically.
+- **Premium landing page** (`client/index.html`, editable source driven by `landing.js` + `i18n.js`) — hero, animated stats, 3-step flow, filterable gallery (177 themes, Free/Pro), features, pricing, testimonials, FAQ, CTA, rich footer.
+- **Guided 5-step builder wizard** (`client/builder.html`) — Theme → Personal → Family → Photo & Contact → Download, live preview, mobile Form/Preview split.
+- **Auto-save drafts** (localStorage `shubhbiodata.draft.v3`) with "resume" banner on landing.
+- **Trilingual UI + biodata** (मराठी / हिंदी / English) with per-language field cache — switching back restores your exact original text (no translation drift).
+- **Phonetic Marathi/Hindi typing** — type English, press Space, get Devanagari (Google Input Tools with offline fallback).
 
-### New render engine (`assets/js/render.js`)
-- 2× HD canvas (**1224×1584**) over the existing 20 theme frames.
-- **Smart adaptive layout**: single column → compact tiers → automatic **two-column split** for rich profiles; photo-aware text flow, word-wrap + shrink-to-fit, so content never overflows.
-- Sections with gold rules & diamonds: वैयक्तिक / ज्योतिष / शिक्षण व व्यवसाय / कौटुंबिक / संपर्क / अपेक्षा.
-- Golden photo frame with double border and corner diamonds.
-- Old output bugs fixed: no more `undefined`, `२ {२ विवाहित}` → `२ (१ विवाहित)` etc.
-- Ink themes: classic black / royal maroon / forest green.
+### Render engine (`assets/js/render.js`)
+- 2× HD canvas (**1224×1584**) over theme frames (PNG 1–20, **vector SVG 21–177**).
+- Adaptive layout: single column → shrink tiers → balanced two-column split, photo-aware flow, clip-safe overflow.
+- Golden photo frame, ink themes (classic / maroon / green), free-plan watermark.
+
+### 177 themes
+- **8 free** themes (PNG frames `theme/t-1..20.png` subset).
+- **169 premium** themes — including **157 vector SVG frames** (`theme/t-21..177.svg`) across royal, traditional, floral, minimal, regional (Marathi + South), community (Hindu/Muslim/Sikh/Christian/Jain/Buddhist), luxury, modern & festive categories.
 
 ### Business model (freemium)
-- **Free ₹0** — 8 basic themes, JPG download with tasteful diagonal watermark + footer strip, auto-save draft.
-- **Premium ₹49** (one-time) — all 20+ themes, watermark-free **HD PNG / JPG / PDF (A4)**, golden photo frame, priority WhatsApp support. Unlock via UPI intent / demo unlock in the studio modal.
-- **Family Pack ₹149** — 5 premium biodatas (ordered via WhatsApp).
+- **Free ₹0** — 8 basic themes, JPG with watermark, auto-save.
+- **Premium ₹49** — all 177 themes, watermark-free HD PNG/JPG/PDF.
+- **Family Pack ₹149** — 5 biodatas via WhatsApp.
+- Unlock is gated: demo unlock works **only on localhost**; production requires server-verified payment token (`POST /api/premium/verify` → HMAC token).
 
-### Rich feature list
-- 📸 Built-in photo cropper (drag + zoom, exact frame aspect).
-- 🔒 100% private — everything is generated client-side; nothing is uploaded.
-- ⬇️ Downloads: HD PNG, JPG, true A4 PDF (jsPDF).
-- 👨‍👩‍👧 Sibling counters with married counts, date→Devanagari conversion, height/rashi/nadi/gan pickers.
-- 🧾 Legacy pages preserved: `aboutus.html`, `contactus.html`, `termcondition.html`, `returnredfund.html`.
+### Privacy (accurate wording)
+- Biodata content + photos stay in browser localStorage; exports are generated client-side.
+- **Translation / transliteration features send the typed text to Google** when used — this is disclosed in the FAQ and feature copy.
+
+---
 
 ## 🗂 Structure
 
 ```
 client/
-  index.html            Premium landing page
+  index.html            Landing page (readable source, landing.js + i18n.js)
   builder.html          Studio (wizard + live preview)
   assets/
-    css/premium.css     Design system (wine + gold + ivory)
-    js/i18n.js          Marathi/Hindi/English dictionaries + template catalogue
-    js/render.js        HD canvas biodata engine (adaptive layout)
-    js/landing.js       Landing interactions (gallery, slider, FAQ, i18n)
+    css/premium.css     Design system (wine + gold + ivory) + a11y polish
+    js/i18n.js          Dictionaries + template catalogue (177 themes)
+    js/render.js        HD canvas biodata engine
+    js/landing.js       Landing interactions
     js/builder.js       Wizard, cropper, exports, premium unlock
-    img/                Generated brand art
-  theme/t-*.png         20 theme frames (existing)
-  images/P*.png         Theme previews (existing)
+    img/                Brand art
+  theme/t-1..20.png     Classic raster theme frames
+  theme/t-21..177.svg   Premium vector theme frames (all 177 themes)
+server.js               Express: static + /api/* (download, translate, premium verify)
 ```
 
 ## 💳 Payments
-The legacy Paytm sandbox flow (`index.js`, `/paynow`, `/callback`) is kept for reference. In the studio, premium unlock uses a UPI intent + demo unlock and can be wired back to `/paynow` when merchant keys are configured. Contact: **7709320496** · info@rdeditor.com.
+Legacy Paytm sandbox flow was removed (broken/dead code). Wire `POST /api/premium/verify` to your payment webhook to grant production unlocks. Contact: **7709320496** · info@rdeditor.com.
+
+## 🔥 Firebase Hosting
+`firebase.json` serves `client/`. **Verify `.firebaserc` points at your intended project** before deploying (`firebase projects:list`).
+
+---
+
+### Repo hygiene
+- `.gitignore` added — `node_modules/`, `.env*`, `.vs/`, `.firebase/`, `scratch/` are ignored (node_modules untracked from git index).
+- No secrets in the tree; Paytm config reads from environment.
 
 © 2026 ShubhBiodata · in association with RDeditor.com

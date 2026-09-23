@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="1584" viewBox="0 0 1224 1584">
+<defs>
+<linearGradient id="gd68" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#f7e0a2"/>
+<stop offset="0.5" stop-color="#c9962f"/>
+<stop offset="1" stop-color="#f7e0a2"/>
+</linearGradient>
+<linearGradient id="gf68" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#3fc46f"/>
+<stop offset="1" stop-color="#0f6b38"/>
+</linearGradient>
+<linearGradient id="tb68" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#43d6d6"/>
+<stop offset="1" stop-color="#0e7a8c"/>
+</linearGradient>
+<linearGradient id="fl68" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#f7e2a8"/>
+<stop offset="0.4" stop-color="#d9ab45"/>
+<stop offset="1" stop-color="#a87c1e"/>
+</linearGradient>
+<filter id="gr68" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+<feColorMatrix type="saturate" values="0"/>
+<feComponentTransfer><feFuncA type="table" tableValues="0 0.05"/></feComponentTransfer>
+</filter>
+<g id="ey68">
+<ellipse rx="36" ry="46" fill="url(#gf68)"/>
+<ellipse rx="36" ry="46" fill="none" stroke="#0b4f2c" stroke-width="7" stroke-dasharray="3.5 6.5"/>
+<ellipse rx="26" ry="34" fill="url(#tb68)"/>
+<ellipse rx="26" ry="34" fill="none" stroke="url(#gd68)" stroke-width="2.2"/>
+<ellipse rx="15" ry="21" fill="#0b3d91"/>
+<ellipse rx="8.5" ry="12.5" fill="#ffd54f"/>
+<ellipse cx="-2.4" cy="-3.8" rx="2.6" ry="3.8" fill="#ffffff" opacity="0.9"/>
+<path d="M-10 34 C-6 40 -2 43 0 44 C2 43 6 40 10 34" fill="none" stroke="#0b4f2c" stroke-width="1.6"/>
+</g>
+<g id="ey6s">
+<use href="#ey68" transform="scale(0.52)"/>
+</g>
+</defs>
+<rect width="1224" height="1584" fill="#f3fbfa"/>
+<rect x="10" y="10" width="1204" height="1564" fill="none" stroke="url(#gd68)" stroke-width="5"/>
+<rect x="30" y="30" width="1164" height="1524" fill="none" stroke="#0e7a8c" stroke-width="2"/>
+<rect x="46" y="46" width="1132" height="1492" fill="none" stroke="url(#gd68)" stroke-width="2"/>
+<rect x="88" y="88" width="1048" height="1408" fill="none" stroke="#c9962f" stroke-width="1.1" stroke-dasharray="12 9"/>
+<g fill="none" stroke-linecap="round">
+<path d="M20 18 C160 44 320 6 470 30 C600 50 760 12 900 32 C1020 48 1140 20 1204 34" stroke="#0e9aa7" stroke-width="3.4"/>
+<path d="M20 18 C160 44 320 6 470 30 C600 50 760 12 900 32 C1020 48 1140 20 1204 34" stroke="url(#gd68)" stroke-width="1.3" opacity="0.8"/>
+<path d="M20 78 C150 96 300 66 450 84 C610 102 780 72 930 86 C1050 96 1150 78 1204 86" stroke="#1f8a4c" stroke-width="3.4"/>
+<path d="M20 78 C150 96 300 66 450 84 C610 102 780 72 930 86 C1050 96 1150 78 1204 86" stroke="#0b3d91" stroke-width="1.2" opacity="0.6"/>
+</g>
+<g>
+<rect x="236" y="42" width="752" height="24" rx="12" fill="url(#fl68)" stroke="#8a6212" stroke-width="1.4"/>
+<path d="M246 47 L978 47" stroke="#ffe9a8" stroke-width="4" opacity="0.75" stroke-linecap="round"/>
+<rect x="226" y="36" width="22" height="36" rx="9" fill="#c9962f" stroke="#8a6212" stroke-width="1.4"/>
+<rect x="976" y="36" width="22" height="36" rx="9" fill="#c9962f" stroke="#8a6212" stroke-width="1.4"/>
+<rect x="300" y="42" width="9" height="24" fill="#0e7a8c"/>
+<rect x="915" y="42" width="9" height="24" fill="#0e7a8c"/>
+<g fill="#0b3d91">
+<circle cx="360" cy="54" r="5.6"/><circle cx="452" cy="54" r="5.6"/><circle cx="544" cy="54" r="5.6"/>
+<circle cx="636" cy="54" r="5.6"/><circle cx="728" cy="54" r="5.6"/><circle cx="820" cy="54" r="5.6"/><circle cx="898" cy="54" r="5.6"/>
+</g>
+<g fill="url(#gd68)">
+<path d="M330 34 L336 42 L330 50 L324 42Z"/>
+<path d="M894 34 L900 42 L894 50 L888 42Z"/>
+</g>
+</g>
+<g>
+<use href="#ey68" transform="translate(48,52) scale(0.95)"/>
+<use href="#ey68" transform="translate(1176,52) scale(0.95)"/>
+<use href="#ey68" transform="translate(48,1532) scale(0.95)"/>
+<use href="#ey68" transform="translate(1176,1532) scale(0.95)"/>
+</g>
+<g fill="none" stroke-linecap="round">
+<path d="M50 118 C82 300 18 470 50 650 C82 830 18 1010 50 1190 C70 1330 44 1444 52 1474" stroke="#0e9aa7" stroke-width="4"/>
+<path d="M50 118 C82 300 18 470 50 650 C82 830 18 1010 50 1190 C70 1330 44 1444 52 1474" stroke="url(#gd68)" stroke-width="1.5"/>
+<path d="M84 118 C116 300 52 470 84 650 C116 830 52 1010 84 1190" stroke="#1f8a4c" stroke-width="3.4"/>
+<path d="M84 118 C116 300 52 470 84 650 C116 830 52 1010 84 1190" stroke="#0b3d91" stroke-width="1.2" opacity="0.55"/>
+<path d="M1174 118 C1142 300 1206 470 1174 650 C1142 830 1206 1010 1174 1190 C1154 1330 1180 1444 1172 1474" stroke="#0e9aa7" stroke-width="4"/>
+<path d="M1174 118 C1142 300 1206 470 1174 650 C1142 830 1206 1010 1174 1190 C1154 1330 1180 1444 1172 1474" stroke="url(#gd68)" stroke-width="1.5"/>
+<path d="M1140 118 C1108 300 1172 470 1140 650 C1108 830 1172 1010 1140 1190" stroke="#1f8a4c" stroke-width="3.4"/>
+<path d="M1140 118 C1108 300 1172 470 1140 650 C1108 830 1172 1010 1140 1190" stroke="#0b3d91" stroke-width="1.2" opacity="0.55"/>
+</g>
+<g fill="#0e9aa7" opacity="0.8">
+<circle cx="30" cy="440" r="3.4"/><circle cx="30" cy="880" r="3.4"/><circle cx="30" cy="1320" r="3.4"/>
+<circle cx="1194" cy="440" r="3.4"/><circle cx="1194" cy="880" r="3.4"/><circle cx="1194" cy="1320" r="3.4"/>
+</g>
+<g fill="none" stroke-linecap="round">
+<path d="M16 1500 C170 1476 340 1516 480 1494 C620 1472 760 1512 900 1494 C1030 1478 1150 1508 1208 1496" stroke="#0e9aa7" stroke-width="3.6"/>
+<path d="M16 1500 C170 1476 340 1516 480 1494 C620 1472 760 1512 900 1494 C1030 1478 1150 1508 1208 1496" stroke="url(#gd68)" stroke-width="1.4"/>
+<path d="M16 1568 C170 1548 340 1580 480 1562 C620 1546 760 1576 900 1560 C1030 1548 1150 1572 1208 1560" stroke="#1f8a4c" stroke-width="3.2"/>
+</g>
+<g>
+<use href="#ey6s" transform="translate(148,1538)"/>
+<use href="#ey6s" transform="translate(304,1530)"/>
+<use href="#ey6s" transform="translate(460,1538)"/>
+<use href="#ey6s" transform="translate(612,1528)"/>
+<use href="#ey6s" transform="translate(764,1538)"/>
+<use href="#ey6s" transform="translate(920,1530)"/>
+<use href="#ey6s" transform="translate(1076,1538)"/>
+</g>
+<g fill="url(#gd68)">
+<path d="M30 1180 L40 1196 L30 1212 L20 1196Z"/>
+<path d="M1194 1180 L1204 1196 L1194 1212 L1184 1196Z"/>
+<path d="M30 372 L40 388 L30 404 L20 388Z"/>
+<path d="M1194 372 L1204 388 L1194 404 L1184 388Z"/>
+</g>
+<g opacity="0.05" transform="translate(612,792) scale(5.4)">
+<ellipse rx="36" ry="46" fill="none" stroke="#0b3d91" stroke-width="2"/>
+<ellipse rx="24" ry="32" fill="none" stroke="#0e7a8c" stroke-width="2"/>
+<ellipse rx="13" ry="19" fill="none" stroke="#0f6b38" stroke-width="2"/>
+</g>
+<rect width="1224" height="1584" filter="url(#gr68)"/>
+</svg>
